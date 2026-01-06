@@ -130,7 +130,6 @@ export default function DashboardSidebar() {
   const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set());
   const [manuallyToggledItems, setManuallyToggledItems] = useState<Set<string>>(new Set());
 
-  // Auto-expand items if a sub-item route is active (only if not manually toggled) 
   const getInitialExpandedState = (): Set<string> => {
     const autoExpanded = new Set<string>();
     navItems.forEach((item) => {
@@ -146,7 +145,6 @@ export default function DashboardSidebar() {
     return autoExpanded;
   };
 
-  // Update expanded items when pathname changes (for auto-expand)
   const autoExpandedItems = getInitialExpandedState();
   const finalExpandedItems = new Set([...autoExpandedItems, ...expandedItems]);
 
@@ -163,8 +161,14 @@ export default function DashboardSidebar() {
     });
   };
 
-  const isActive = (href: string) => {
+  const isActive = (href: string, itemName: string, hasSubItems: boolean = false) => {
     if (href === "#") return false;
+    if (itemName === "Dashboard") return true;
+    if (hasSubItems) {
+      const parentItem = navItems.find(nav => nav.name === itemName);
+      const hasActiveSubItem = parentItem?.subItems?.some((subItem) => pathname === subItem.href);
+      return pathname === href && !hasActiveSubItem;
+    }
     return pathname === href || pathname?.startsWith(href + "/");
   };
 
@@ -223,12 +227,14 @@ export default function DashboardSidebar() {
 
         <nav className="flex-1 space-y-1 px-3 py-4 overflow-y-auto">
           {navItems.map((item) => {
-            const active = isActive(item.href);
+            const hasSubItems = !!(item.subItems && item.subItems.length > 0);
+            const active = isActive(item.href, item.name, hasSubItems);
             const isExpanded = finalExpandedItems.has(item.name);
-            const hasSubItems = item.subItems && item.subItems.length > 0;
 
             const hasActiveSubItem = hasSubItems && item.subItems!.some((subItem) => isSubItemActive(subItem.href));
-            const isParentActive = active || hasActiveSubItem;
+            const isParentActive = hasSubItems 
+              ? (pathname === item.href && !hasActiveSubItem)
+              : active;
 
             return (
               <div key={item.name}>
@@ -261,19 +267,19 @@ export default function DashboardSidebar() {
                       href={item.href}
                       onClick={() => setIsMobileMenuOpen(false)}
                       className={`flex-1 flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${
-                        isParentActive
+                        active
                           ? "bg-[#3b82f6]/60 text-white shadow-sm"
                           : "text-white/80 hover:bg-white/10 hover:text-white"
                       }`}
                     >
-                      <span className={isParentActive ? "text-white" : "text-white/60"}>{item.icon}</span>
+                      <span className={active ? "text-white" : "text-white/60"}>{item.icon}</span>
                       <span>{item.name}</span>
                     </Link>
                   )}
                 </div>
                 {hasSubItems && isExpanded && (
                   <div className={`ml-4 mt-1 space-y-1 border-l pl-2 ${
-                    isParentActive ? "border-[#3b82f6]/40" : "border-white/20"
+                    hasActiveSubItem ? "border-[#3b82f6]/40" : "border-white/20"
                   }`}>
                     {item.subItems!.map((subItem) => {
                       const subActive = isSubItemActive(subItem.href);

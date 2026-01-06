@@ -51,10 +51,7 @@ export default function EditUserPage() {
     }
 
     try {
-      // In real app, call API to update user
       console.log("Updating user:", formData);
-      
-      // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1500));
       
       showToast("User updated successfully", "success");

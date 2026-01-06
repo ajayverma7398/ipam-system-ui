@@ -50,7 +50,6 @@ export function CMDBIntegration() {
 
   const handleTestConnection = async () => {
     setTesting(true);
-    // Simulate connection test
     await new Promise((resolve) => setTimeout(resolve, 2000));
     setTesting(false);
     showToast("Connection test successful", "success");
