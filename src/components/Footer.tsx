@@ -17,7 +17,7 @@ export default function Footer() {
             © {new Date().getFullYear()} IPAM System. All rights reserved.
           </p>
           <p className="text-sm text-white/80 whitespace-nowrap">
-            Design and development by <span className="font-semibold text-white">Ashish</span>
+            Design and development by <span className="font-semibold text-white">Ajay</span>
           </p>
         </div>
       </div>
