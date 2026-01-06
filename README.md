@@ -411,17 +411,9 @@ Before production deployment:
 
 ---
 
-## 📝 License
-
-## 👤 Ajay Kumar Verma
+## 📝 License : 👤 Ajay Kumar Verma
 
 Built by a Frontend Engineer specializing in React, Next.js, and modern web architecture.
-
----
-
-## 🤝 Contributing
-
-[Add contribution guidelines if applicable]
 
 ---
 
