@@ -10,13 +10,6 @@ import { DataTable, type Column } from "@/components/common/data-display";
 import { useToast } from "@/components/ui";
 import Breadcrumb from "@/components/common/layout/Breadcrumb";
 
-/**
- * Activities Page
- * 
- * Full page view of all system activities with filtering, search, and export capabilities.
- * Displays complete activity log with detailed information.
- */
-
 type ActivityTypeFilter = "all" | ActivityType;
 
 export default function ActivitiesPage() {
@@ -35,27 +28,22 @@ export default function ActivitiesPage() {
   const filteredActivities = useMemo(() => {
     let result = activities;
 
-    // Filter by activity type
     if (filters.activityType !== "all") {
       result = result.filter((activity) => activity.type === filters.activityType);
     }
 
-    // Filter by user
     if (filters.userId !== "all") {
       result = result.filter((activity) => activity.user === filters.userId);
     }
 
-    // Filter by pool
     if (filters.poolId !== "all") {
       result = result.filter((activity) => activity.pool_id === filters.poolId);
     }
 
-    // Filter by severity
     if (filters.severity !== "all") {
       result = result.filter((activity) => activity.severity === filters.severity);
     }
 
-    // Filter by date range
     if (filters.dateFrom) {
       const fromDate = new Date(filters.dateFrom);
       result = result.filter((activity) => new Date(activity.timestamp) >= fromDate);
@@ -67,7 +55,6 @@ export default function ActivitiesPage() {
       result = result.filter((activity) => new Date(activity.timestamp) <= toDate);
     }
 
-    // Filter by search query
     if (searchQuery) {
       const query = searchQuery.toLowerCase();
       result = result.filter(
@@ -80,7 +67,6 @@ export default function ActivitiesPage() {
       );
     }
 
-    // Sort by timestamp (newest first)
     return result.sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime());
   }, [filters, searchQuery]);
 

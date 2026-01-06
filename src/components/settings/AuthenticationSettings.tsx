@@ -82,7 +82,6 @@ export function AuthenticationSettings() {
 
   const handleTestLDAP = async () => {
     showToast("Testing LDAP connection...", "info");
-    // Simulate LDAP test
     await new Promise((resolve) => setTimeout(resolve, 2000));
     showToast("LDAP connection test successful", "success");
   };
