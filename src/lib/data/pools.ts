@@ -1,0 +1,427 @@
+
+export interface PoolUtilization {
+  allocated: number;
+  available: number;
+  reserved: number;
+  percentage: number;
+}
+
+export interface IPPool {
+  id: string; 
+  cidr: string;
+  network_address: string;
+  broadcast_address: string;
+  subnet_mask: string;
+  type: 'private' | 'public' | 'multicast';
+  ip_class: 'A' | 'B' | 'C' | 'D' | 'E';
+  total_hosts: number;
+  usable_hosts: number;
+  description: string;
+  tags: string[];
+  created_by: string; 
+  created_at: string; 
+  updated_at: string; 
+  utilization: PoolUtilization;
+}
+
+export const pools: IPPool[] = [
+  {
+    id: "pool-001",
+    cidr: "192.168.1.0/24",
+    network_address: "192.168.1.0",
+    broadcast_address: "192.168.1.255",
+    subnet_mask: "255.255.255.0",
+    type: "private",
+    ip_class: "C",
+    total_hosts: 256,
+    usable_hosts: 254,
+    description: "Main office network - Production servers and workstations",
+    tags: ["production", "office", "servers"],
+    created_by: "admin@ipam.local",
+    created_at: "2023-01-15T08:30:00Z",
+    updated_at: "2024-03-10T14:22:00Z",
+    utilization: {
+      allocated: 187,
+      available: 65,
+      reserved: 2,
+      percentage: 74.41
+    }
+  },
+  {
+    id: "pool-002",
+    cidr: "192.168.2.0/24",
+    network_address: "192.168.2.0",
+    broadcast_address: "192.168.2.255",
+    subnet_mask: "255.255.255.0",
+    type: "private",
+    ip_class: "C",
+    total_hosts: 256,
+    usable_hosts: 254,
+    description: "Development environment - Testing and staging servers",
+    tags: ["development", "staging", "testing"],
+    created_by: "admin@ipam.local",
+    created_at: "2023-02-20T10:15:00Z",
+    updated_at: "2024-03-08T09:45:00Z",
+    utilization: {
+      allocated: 45,
+      available: 207,
+      reserved: 2,
+      percentage: 18.50
+    }
+  },
+  {
+    id: "pool-003",
+    cidr: "192.168.3.0/24",
+    network_address: "192.168.3.0",
+    broadcast_address: "192.168.3.255",
+    subnet_mask: "255.255.255.0",
+    type: "private",
+    ip_class: "C",
+    total_hosts: 256,
+    usable_hosts: 254,
+    description: "Guest WiFi network - Public access for visitors",
+    tags: ["guest", "wifi", "public-access"],
+    created_by: "admin@ipam.local",
+    created_at: "2023-03-10T11:00:00Z",
+    updated_at: "2024-03-12T16:30:00Z",
+    utilization: {
+      allocated: 12,
+      available: 240,
+      reserved: 2,
+      percentage: 5.51
+    }
+  },
+  {
+    id: "pool-004",
+    cidr: "192.168.10.0/24",
+    network_address: "192.168.10.0",
+    broadcast_address: "192.168.10.255",
+    subnet_mask: "255.255.255.0",
+    type: "private",
+    ip_class: "C",
+    total_hosts: 256,
+    usable_hosts: 254,
+    description: "IoT devices network - Smart devices and sensors",
+    tags: ["iot", "devices", "sensors"],
+    created_by: "admin@ipam.local",
+    created_at: "2023-04-05T13:20:00Z",
+    updated_at: "2024-03-15T10:15:00Z",
+    utilization: {
+      allocated: 89,
+      available: 163,
+      reserved: 2,
+      percentage: 35.83
+    }
+  },
+  {
+    id: "pool-005",
+    cidr: "192.168.20.0/24",
+    network_address: "192.168.20.0",
+    broadcast_address: "192.168.20.255",
+    subnet_mask: "255.255.255.0",
+    type: "private",
+    ip_class: "C",
+    total_hosts: 256,
+    usable_hosts: 254,
+    description: "DMZ network - Public-facing servers and services",
+    tags: ["dmz", "public-facing", "servers"],
+    created_by: "admin@ipam.local",
+    created_at: "2023-05-12T09:00:00Z",
+    updated_at: "2024-03-14T11:20:00Z",
+    utilization: {
+      allocated: 23,
+      available: 229,
+      reserved: 2,
+      percentage: 9.84
+    }
+  },
+  {
+    id: "pool-006",
+    cidr: "172.16.0.0/20",
+    network_address: "172.16.0.0",
+    broadcast_address: "172.16.15.255",
+    subnet_mask: "255.255.240.0",
+    type: "private",
+    ip_class: "B",
+    total_hosts: 4096,
+    usable_hosts: 4094,
+    description: "Data center network - Primary server infrastructure",
+    tags: ["datacenter", "servers", "infrastructure"],
+    created_by: "admin@ipam.local",
+    created_at: "2023-01-10T07:00:00Z",
+    updated_at: "2024-03-15T08:30:00Z",
+    utilization: {
+      allocated: 3245,
+      available: 847,
+      reserved: 2,
+      percentage: 79.26 // Edge case: High utilization pool
+    }
+  },
+  {
+    id: "pool-007",
+    cidr: "172.16.16.0/20",
+    network_address: "172.16.16.0",
+    broadcast_address: "172.16.31.255",
+    subnet_mask: "255.255.240.0",
+    type: "private",
+    ip_class: "B",
+    total_hosts: 4096,
+    usable_hosts: 4094,
+    description: "Backup and disaster recovery network",
+    tags: ["backup", "disaster-recovery", "storage"],
+    created_by: "admin@ipam.local",
+    created_at: "2023-02-15T14:00:00Z",
+    updated_at: "2024-03-10T15:45:00Z",
+    utilization: {
+      allocated: 892,
+      available: 3200,
+      reserved: 2,
+      percentage: 21.78
+    }
+  },
+  {
+    id: "pool-008",
+    cidr: "172.16.32.0/20",
+    network_address: "172.16.32.0",
+    broadcast_address: "172.16.47.255",
+    subnet_mask: "255.255.240.0",
+    type: "private",
+    ip_class: "B",
+    total_hosts: 4096,
+    usable_hosts: 4094,
+    description: "Virtualization cluster - VM hosts and containers",
+    tags: ["virtualization", "vm", "containers", "kubernetes"],
+    created_by: "admin@ipam.local",
+    created_at: "2023-03-20T10:30:00Z",
+    updated_at: "2024-03-15T12:00:00Z",
+    utilization: {
+      allocated: 2156,
+      available: 1936,
+      reserved: 2,
+      percentage: 52.66
+    }
+  },
+  {
+    id: "pool-009",
+    cidr: "10.0.0.0/16",
+    network_address: "10.0.0.0",
+    broadcast_address: "10.0.255.255",
+    subnet_mask: "255.255.0.0",
+    type: "private",
+    ip_class: "A",
+    total_hosts: 65536,
+    usable_hosts: 65534,
+    description: "Corporate WAN - Main enterprise network backbone",
+    tags: ["wan", "enterprise", "backbone"],
+    created_by: "admin@ipam.local",
+    created_at: "2022-12-01T06:00:00Z",
+    updated_at: "2024-03-15T09:15:00Z",
+    utilization: {
+      allocated: 12345,
+      available: 53187,
+      reserved: 2,
+      percentage: 18.84
+    }
+  },
+  {
+    id: "pool-010",
+    cidr: "10.1.0.0/16",
+    network_address: "10.1.0.0",
+    broadcast_address: "10.1.255.255",
+    subnet_mask: "255.255.0.0",
+    type: "private",
+    ip_class: "A",
+    total_hosts: 65536,
+    usable_hosts: 65534,
+    description: "Branch office network - Remote locations and VPN clients",
+    tags: ["branch", "vpn", "remote"],
+    created_by: "admin@ipam.local",
+    created_at: "2023-01-05T08:00:00Z",
+    updated_at: "2024-03-14T13:30:00Z",
+    utilization: {
+      allocated: 3456,
+      available: 62076,
+      reserved: 2,
+      percentage: 5.27
+    }
+  },
+  {
+    id: "pool-011",
+    cidr: "203.0.113.0/24",
+    network_address: "203.0.113.0",
+    broadcast_address: "203.0.113.255",
+    subnet_mask: "255.255.255.0",
+    type: "public",
+    ip_class: "C",
+    total_hosts: 256,
+    usable_hosts: 254,
+    description: "Public web servers - Production websites and APIs",
+    tags: ["public", "web", "production", "api"],
+    created_by: "admin@ipam.local",
+    created_at: "2023-06-01T09:00:00Z",
+    updated_at: "2024-03-15T10:00:00Z",
+    utilization: {
+      allocated: 89,
+      available: 165,
+      reserved: 0,
+      percentage: 34.77
+    }
+  },
+  {
+    id: "pool-012",
+    cidr: "198.51.100.0/24",
+    network_address: "198.51.100.0",
+    broadcast_address: "198.51.100.255",
+    subnet_mask: "255.255.255.0",
+    type: "public",
+    ip_class: "C",
+    total_hosts: 256,
+    usable_hosts: 254,
+    description: "Public DNS and mail servers",
+    tags: ["public", "dns", "mail", "mx"],
+    created_by: "admin@ipam.local",
+    created_at: "2023-06-15T11:00:00Z",
+    updated_at: "2024-03-12T14:20:00Z",
+    utilization: {
+      allocated: 45,
+      available: 209,
+      reserved: 0,
+      percentage: 17.72
+    }
+  },
+  {
+    id: "pool-013",
+    cidr: "192.0.2.0/24",
+    network_address: "192.0.2.0",
+    broadcast_address: "192.0.2.255",
+    subnet_mask: "255.255.255.0",
+    type: "public",
+    ip_class: "C",
+    total_hosts: 256,
+    usable_hosts: 254,
+    description: "Public load balancers and CDN edge servers",
+    tags: ["public", "load-balancer", "cdn", "edge"],
+    created_by: "admin@ipam.local",
+    created_at: "2023-07-01T10:00:00Z",
+    updated_at: "2024-03-13T15:00:00Z",
+    utilization: {
+      allocated: 67,
+      available: 187,
+      reserved: 0,
+      percentage: 26.38
+    }
+  },
+  {
+    id: "pool-014",
+    cidr: "224.0.0.0/24",
+    network_address: "224.0.0.0",
+    broadcast_address: "224.0.0.255",
+    subnet_mask: "255.255.255.0",
+    type: "multicast",
+    ip_class: "D",
+    total_hosts: 256,
+    usable_hosts: 254,
+    description: "Local network control protocol multicast",
+    tags: ["multicast", "control", "protocols"],
+    created_by: "admin@ipam.local",
+    created_at: "2023-08-10T08:00:00Z",
+    updated_at: "2024-03-01T09:00:00Z",
+    utilization: {
+      allocated: 0,
+      available: 254,
+      reserved: 0,
+      percentage: 0.00 // Edge case: Empty pool
+    }
+  },
+  {
+    id: "pool-015",
+    cidr: "239.192.0.0/16",
+    network_address: "239.192.0.0",
+    broadcast_address: "239.192.255.255",
+    subnet_mask: "255.255.0.0",
+    type: "multicast",
+    ip_class: "D",
+    total_hosts: 65536,
+    usable_hosts: 65534,
+    description: "Organization-local multicast - Video streaming and conferencing",
+    tags: ["multicast", "streaming", "conferencing", "organization"],
+    created_by: "admin@ipam.local",
+    created_at: "2023-08-20T09:00:00Z",
+    updated_at: "2024-03-10T11:00:00Z",
+    utilization: {
+      allocated: 234,
+      available: 65300,
+      reserved: 0,
+      percentage: 0.36
+    }
+  },
+  {
+    id: "pool-016",
+    cidr: "192.168.100.0/24",
+    network_address: "192.168.100.0",
+    broadcast_address: "192.168.100.255",
+    subnet_mask: "255.255.255.0",
+    type: "private",
+    ip_class: "C",
+    total_hosts: 256,
+    usable_hosts: 254,
+    description: "Security cameras and surveillance network",
+    tags: ["security", "cameras", "surveillance"],
+    created_by: "admin@ipam.local",
+    created_at: "2023-09-05T12:00:00Z",
+    updated_at: "2024-03-14T16:00:00Z",
+    utilization: {
+      allocated: 156,
+      available: 96,
+      reserved: 2,
+      percentage: 62.20
+    }
+  },
+  {
+    id: "pool-017",
+    cidr: "192.168.200.0/24",
+    network_address: "192.168.200.0",
+    broadcast_address: "192.168.200.255",
+    subnet_mask: "255.255.255.0",
+    type: "private",
+    ip_class: "C",
+    total_hosts: 256,
+    usable_hosts: 254,
+    description: "Printers and network devices",
+    tags: ["printers", "network-devices", "peripherals"],
+    created_by: "admin@ipam.local",
+    created_at: "2023-10-01T10:00:00Z",
+    updated_at: "2024-03-12T10:30:00Z",
+    utilization: {
+      allocated: 34,
+      available: 218,
+      reserved: 2,
+      percentage: 14.17
+    }
+  },
+  {
+    id: "pool-018",
+    cidr: "10.10.0.0/16",
+    network_address: "10.10.0.0",
+    broadcast_address: "10.10.255.255",
+    subnet_mask: "255.255.0.0",
+    type: "private",
+    ip_class: "A",
+    total_hosts: 65536,
+    usable_hosts: 65534,
+    description: "Research and development network - Labs and testing",
+    tags: ["rd", "research", "labs", "testing"],
+    created_by: "admin@ipam.local",
+    created_at: "2023-11-01T08:00:00Z",
+    updated_at: "2024-03-15T13:00:00Z",
+    utilization: {
+      allocated: 567,
+      available: 64965,
+      reserved: 2,
+      percentage: 0.87
+    }
+  }
+];
+
+export default pools;
+

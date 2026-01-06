@@ -1,0 +1,377 @@
+{
+  "changeTimeline": {
+    "7d": {
+      "all": [
+        { "date": "Dec 9", "successRate": 92.5, "successful": 18, "failed": 2, "total": 20 },
+        { "date": "Dec 10", "successRate": 95.0, "successful": 19, "failed": 1, "total": 20 },
+        { "date": "Dec 11", "successRate": 90.0, "successful": 18, "failed": 2, "total": 20 },
+        { "date": "Dec 12", "successRate": 88.0, "successful": 22, "failed": 3, "total": 25 },
+        { "date": "Dec 13", "successRate": 94.7, "successful": 18, "failed": 1, "total": 19 },
+        { "date": "Dec 14", "successRate": 96.0, "successful": 24, "failed": 1, "total": 25 },
+        { "date": "Dec 15", "successRate": 90.5, "successful": 19, "failed": 2, "total": 21 }
+      ],
+      "ip_allocation": [
+        { "date": "Dec 9", "successRate": 94.1, "successful": 16, "failed": 1, "total": 17 },
+        { "date": "Dec 10", "successRate": 96.7, "successful": 15, "failed": 0, "total": 15 },
+        { "date": "Dec 11", "successRate": 93.3, "successful": 14, "failed": 1, "total": 15 },
+        { "date": "Dec 12", "successRate": 91.7, "successful": 11, "failed": 1, "total": 12 },
+        { "date": "Dec 13", "successRate": 95.0, "successful": 19, "failed": 1, "total": 20 },
+        { "date": "Dec 14", "successRate": 97.1, "successful": 17, "failed": 0, "total": 17 },
+        { "date": "Dec 15", "successRate": 92.3, "successful": 12, "failed": 1, "total": 13 }
+      ],
+      "ip_release": [
+        { "date": "Dec 9", "successRate": 88.9, "successful": 8, "failed": 1, "total": 9 },
+        { "date": "Dec 10", "successRate": 90.0, "successful": 9, "failed": 1, "total": 10 },
+        { "date": "Dec 11", "successRate": 85.7, "successful": 6, "failed": 1, "total": 7 },
+        { "date": "Dec 12", "successRate": 83.3, "successful": 10, "failed": 2, "total": 12 },
+        { "date": "Dec 13", "successRate": 93.3, "successful": 14, "failed": 1, "total": 15 },
+        { "date": "Dec 14", "successRate": 94.1, "successful": 16, "failed": 1, "total": 17 },
+        { "date": "Dec 15", "successRate": 87.5, "successful": 7, "failed": 1, "total": 8 }
+      ],
+      "pool_creation": [
+        { "date": "Dec 9", "successRate": 100.0, "successful": 2, "failed": 0, "total": 2 },
+        { "date": "Dec 10", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 11", "successRate": 100.0, "successful": 3, "failed": 0, "total": 3 },
+        { "date": "Dec 12", "successRate": 100.0, "successful": 2, "failed": 0, "total": 2 },
+        { "date": "Dec 13", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 14", "successRate": 100.0, "successful": 2, "failed": 0, "total": 2 },
+        { "date": "Dec 15", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 }
+      ],
+      "pool_deletion": [
+        { "date": "Dec 9", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 10", "successRate": 100.0, "successful": 0, "failed": 0, "total": 0 },
+        { "date": "Dec 11", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 12", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 13", "successRate": 100.0, "successful": 0, "failed": 0, "total": 0 },
+        { "date": "Dec 14", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 15", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 }
+      ]
+    },
+    "30d": {
+      "all": [
+        { "date": "Nov 16", "successRate": 91.7, "successful": 11, "failed": 1, "total": 12 },
+        { "date": "Nov 17", "successRate": 93.3, "successful": 14, "failed": 1, "total": 15 },
+        { "date": "Nov 18", "successRate": 94.1, "successful": 16, "failed": 1, "total": 17 },
+        { "date": "Nov 19", "successRate": 90.0, "successful": 9, "failed": 1, "total": 10 },
+        { "date": "Nov 20", "successRate": 94.4, "successful": 17, "failed": 1, "total": 18 },
+        { "date": "Nov 21", "successRate": 92.9, "successful": 13, "failed": 1, "total": 14 },
+        { "date": "Nov 22", "successRate": 95.0, "successful": 19, "failed": 1, "total": 20 },
+        { "date": "Nov 23", "successRate": 93.8, "successful": 15, "failed": 1, "total": 16 },
+        { "date": "Nov 24", "successRate": 95.5, "successful": 21, "failed": 1, "total": 22 },
+        { "date": "Nov 25", "successRate": 94.7, "successful": 18, "failed": 1, "total": 19 },
+        { "date": "Nov 26", "successRate": 92.3, "successful": 12, "failed": 1, "total": 13 },
+        { "date": "Nov 27", "successRate": 94.1, "successful": 16, "failed": 1, "total": 17 },
+        { "date": "Nov 28", "successRate": 95.2, "successful": 20, "failed": 1, "total": 21 },
+        { "date": "Nov 29", "successRate": 93.3, "successful": 14, "failed": 1, "total": 15 },
+        { "date": "Nov 30", "successRate": 96.0, "successful": 24, "failed": 1, "total": 25 },
+        { "date": "Dec 1", "successRate": 94.4, "successful": 17, "failed": 1, "total": 18 },
+        { "date": "Dec 2", "successRate": 93.8, "successful": 15, "failed": 1, "total": 16 },
+        { "date": "Dec 3", "successRate": 95.0, "successful": 19, "failed": 1, "total": 20 },
+        { "date": "Dec 4", "successRate": 92.9, "successful": 13, "failed": 1, "total": 14 },
+        { "date": "Dec 5", "successRate": 94.7, "successful": 18, "failed": 1, "total": 19 },
+        { "date": "Dec 6", "successRate": 95.7, "successful": 22, "failed": 1, "total": 23 },
+        { "date": "Dec 7", "successRate": 94.1, "successful": 16, "failed": 1, "total": 17 },
+        { "date": "Dec 8", "successRate": 95.2, "successful": 20, "failed": 1, "total": 21 },
+        { "date": "Dec 9", "successRate": 92.5, "successful": 18, "failed": 2, "total": 20 },
+        { "date": "Dec 10", "successRate": 95.0, "successful": 19, "failed": 1, "total": 20 },
+        { "date": "Dec 11", "successRate": 90.0, "successful": 18, "failed": 2, "total": 20 },
+        { "date": "Dec 12", "successRate": 88.0, "successful": 22, "failed": 3, "total": 25 },
+        { "date": "Dec 13", "successRate": 94.7, "successful": 18, "failed": 1, "total": 19 },
+        { "date": "Dec 14", "successRate": 96.0, "successful": 24, "failed": 1, "total": 25 },
+        { "date": "Dec 15", "successRate": 90.5, "successful": 19, "failed": 2, "total": 21 }
+      ],
+      "ip_allocation": [
+        { "date": "Nov 16", "successRate": 92.3, "successful": 12, "failed": 1, "total": 13 },
+        { "date": "Nov 17", "successRate": 94.1, "successful": 16, "failed": 1, "total": 17 },
+        { "date": "Nov 18", "successRate": 95.0, "successful": 19, "failed": 1, "total": 20 },
+        { "date": "Nov 19", "successRate": 91.7, "successful": 11, "failed": 1, "total": 12 },
+        { "date": "Nov 20", "successRate": 94.7, "successful": 18, "failed": 1, "total": 19 },
+        { "date": "Nov 21", "successRate": 93.3, "successful": 14, "failed": 1, "total": 15 },
+        { "date": "Nov 22", "successRate": 95.2, "successful": 20, "failed": 1, "total": 21 },
+        { "date": "Nov 23", "successRate": 94.1, "successful": 16, "failed": 1, "total": 17 },
+        { "date": "Nov 24", "successRate": 96.0, "successful": 24, "failed": 1, "total": 25 },
+        { "date": "Nov 25", "successRate": 95.0, "successful": 19, "failed": 1, "total": 20 },
+        { "date": "Nov 26", "successRate": 92.9, "successful": 13, "failed": 1, "total": 14 },
+        { "date": "Nov 27", "successRate": 94.4, "successful": 17, "failed": 1, "total": 18 },
+        { "date": "Nov 28", "successRate": 95.5, "successful": 21, "failed": 1, "total": 22 },
+        { "date": "Nov 29", "successRate": 93.8, "successful": 15, "failed": 1, "total": 16 },
+        { "date": "Nov 30", "successRate": 96.7, "successful": 29, "failed": 1, "total": 30 },
+        { "date": "Dec 1", "successRate": 94.7, "successful": 18, "failed": 1, "total": 19 },
+        { "date": "Dec 2", "successRate": 94.1, "successful": 16, "failed": 1, "total": 17 },
+        { "date": "Dec 3", "successRate": 95.2, "successful": 20, "failed": 1, "total": 21 },
+        { "date": "Dec 4", "successRate": 93.3, "successful": 14, "failed": 1, "total": 15 },
+        { "date": "Dec 5", "successRate": 94.4, "successful": 17, "failed": 1, "total": 18 },
+        { "date": "Dec 6", "successRate": 95.7, "successful": 22, "failed": 1, "total": 23 },
+        { "date": "Dec 7", "successRate": 94.1, "successful": 16, "failed": 1, "total": 17 },
+        { "date": "Dec 8", "successRate": 95.0, "successful": 19, "failed": 1, "total": 20 },
+        { "date": "Dec 9", "successRate": 94.1, "successful": 16, "failed": 1, "total": 17 },
+        { "date": "Dec 10", "successRate": 96.7, "successful": 15, "failed": 0, "total": 15 },
+        { "date": "Dec 11", "successRate": 93.3, "successful": 14, "failed": 1, "total": 15 },
+        { "date": "Dec 12", "successRate": 91.7, "successful": 11, "failed": 1, "total": 12 },
+        { "date": "Dec 13", "successRate": 95.0, "successful": 19, "failed": 1, "total": 20 },
+        { "date": "Dec 14", "successRate": 97.1, "successful": 17, "failed": 0, "total": 17 },
+        { "date": "Dec 15", "successRate": 92.3, "successful": 12, "failed": 1, "total": 13 }
+      ],
+      "ip_release": [
+        { "date": "Nov 16", "successRate": 88.9, "successful": 8, "failed": 1, "total": 9 },
+        { "date": "Nov 17", "successRate": 90.0, "successful": 9, "failed": 1, "total": 10 },
+        { "date": "Nov 18", "successRate": 87.5, "successful": 7, "failed": 1, "total": 8 },
+        { "date": "Nov 19", "successRate": 85.7, "successful": 6, "failed": 1, "total": 7 },
+        { "date": "Nov 20", "successRate": 91.7, "successful": 11, "failed": 1, "total": 12 },
+        { "date": "Nov 21", "successRate": 89.3, "successful": 12, "failed": 2, "total": 14 },
+        { "date": "Nov 22", "successRate": 92.3, "successful": 12, "failed": 1, "total": 13 },
+        { "date": "Nov 23", "successRate": 90.9, "successful": 10, "failed": 1, "total": 11 },
+        { "date": "Nov 24", "successRate": 93.3, "successful": 14, "failed": 1, "total": 15 },
+        { "date": "Nov 25", "successRate": 91.7, "successful": 11, "failed": 1, "total": 12 },
+        { "date": "Nov 26", "successRate": 88.9, "successful": 8, "failed": 1, "total": 9 },
+        { "date": "Nov 27", "successRate": 90.0, "successful": 9, "failed": 1, "total": 10 },
+        { "date": "Nov 28", "successRate": 92.9, "successful": 13, "failed": 1, "total": 14 },
+        { "date": "Nov 29", "successRate": 90.0, "successful": 9, "failed": 1, "total": 10 },
+        { "date": "Nov 30", "successRate": 94.1, "successful": 16, "failed": 1, "total": 17 },
+        { "date": "Dec 1", "successRate": 91.7, "successful": 11, "failed": 1, "total": 12 },
+        { "date": "Dec 2", "successRate": 90.9, "successful": 10, "failed": 1, "total": 11 },
+        { "date": "Dec 3", "successRate": 92.3, "successful": 12, "failed": 1, "total": 13 },
+        { "date": "Dec 4", "successRate": 89.3, "successful": 12, "failed": 2, "total": 14 },
+        { "date": "Dec 5", "successRate": 91.7, "successful": 11, "failed": 1, "total": 12 },
+        { "date": "Dec 6", "successRate": 93.3, "successful": 14, "failed": 1, "total": 15 },
+        { "date": "Dec 7", "successRate": 90.9, "successful": 10, "failed": 1, "total": 11 },
+        { "date": "Dec 8", "successRate": 92.3, "successful": 12, "failed": 1, "total": 13 },
+        { "date": "Dec 9", "successRate": 88.9, "successful": 8, "failed": 1, "total": 9 },
+        { "date": "Dec 10", "successRate": 90.0, "successful": 9, "failed": 1, "total": 10 },
+        { "date": "Dec 11", "successRate": 85.7, "successful": 6, "failed": 1, "total": 7 },
+        { "date": "Dec 12", "successRate": 83.3, "successful": 10, "failed": 2, "total": 12 },
+        { "date": "Dec 13", "successRate": 93.3, "successful": 14, "failed": 1, "total": 15 },
+        { "date": "Dec 14", "successRate": 94.1, "successful": 16, "failed": 1, "total": 17 },
+        { "date": "Dec 15", "successRate": 87.5, "successful": 7, "failed": 1, "total": 8 }
+      ],
+      "pool_creation": [
+        { "date": "Nov 16", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Nov 17", "successRate": 100.0, "successful": 2, "failed": 0, "total": 2 },
+        { "date": "Nov 18", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Nov 19", "successRate": 100.0, "successful": 0, "failed": 0, "total": 0 },
+        { "date": "Nov 20", "successRate": 100.0, "successful": 2, "failed": 0, "total": 2 },
+        { "date": "Nov 21", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Nov 22", "successRate": 100.0, "successful": 2, "failed": 0, "total": 2 },
+        { "date": "Nov 23", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Nov 24", "successRate": 100.0, "successful": 2, "failed": 0, "total": 2 },
+        { "date": "Nov 25", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Nov 26", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Nov 27", "successRate": 100.0, "successful": 2, "failed": 0, "total": 2 },
+        { "date": "Nov 28", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Nov 29", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Nov 30", "successRate": 100.0, "successful": 2, "failed": 0, "total": 2 },
+        { "date": "Dec 1", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 2", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 3", "successRate": 100.0, "successful": 2, "failed": 0, "total": 2 },
+        { "date": "Dec 4", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 5", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 6", "successRate": 100.0, "successful": 2, "failed": 0, "total": 2 },
+        { "date": "Dec 7", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 8", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 9", "successRate": 100.0, "successful": 2, "failed": 0, "total": 2 },
+        { "date": "Dec 10", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 11", "successRate": 100.0, "successful": 3, "failed": 0, "total": 3 },
+        { "date": "Dec 12", "successRate": 100.0, "successful": 2, "failed": 0, "total": 2 },
+        { "date": "Dec 13", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 14", "successRate": 100.0, "successful": 2, "failed": 0, "total": 2 },
+        { "date": "Dec 15", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 }
+      ],
+      "pool_deletion": [
+        { "date": "Nov 16", "successRate": 100.0, "successful": 0, "failed": 0, "total": 0 },
+        { "date": "Nov 17", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Nov 18", "successRate": 100.0, "successful": 0, "failed": 0, "total": 0 },
+        { "date": "Nov 19", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Nov 20", "successRate": 100.0, "successful": 0, "failed": 0, "total": 0 },
+        { "date": "Nov 21", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Nov 22", "successRate": 100.0, "successful": 0, "failed": 0, "total": 0 },
+        { "date": "Nov 23", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Nov 24", "successRate": 100.0, "successful": 0, "failed": 0, "total": 0 },
+        { "date": "Nov 25", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Nov 26", "successRate": 100.0, "successful": 0, "failed": 0, "total": 0 },
+        { "date": "Nov 27", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Nov 28", "successRate": 100.0, "successful": 0, "failed": 0, "total": 0 },
+        { "date": "Nov 29", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Nov 30", "successRate": 100.0, "successful": 0, "failed": 0, "total": 0 },
+        { "date": "Dec 1", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 2", "successRate": 100.0, "successful": 0, "failed": 0, "total": 0 },
+        { "date": "Dec 3", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 4", "successRate": 100.0, "successful": 0, "failed": 0, "total": 0 },
+        { "date": "Dec 5", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 6", "successRate": 100.0, "successful": 0, "failed": 0, "total": 0 },
+        { "date": "Dec 7", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 8", "successRate": 100.0, "successful": 0, "failed": 0, "total": 0 },
+        { "date": "Dec 9", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 10", "successRate": 100.0, "successful": 0, "failed": 0, "total": 0 },
+        { "date": "Dec 11", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 12", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 13", "successRate": 100.0, "successful": 0, "failed": 0, "total": 0 },
+        { "date": "Dec 14", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 },
+        { "date": "Dec 15", "successRate": 100.0, "successful": 1, "failed": 0, "total": 1 }
+      ]
+    },
+    "90d": {
+      "all": [
+        { "date": "Sep 17", "successRate": 91.2, "successful": 52, "failed": 5, "total": 57 },
+        { "date": "Sep 24", "successRate": 93.5, "successful": 58, "failed": 4, "total": 62 },
+        { "date": "Oct 1", "successRate": 94.1, "successful": 64, "failed": 4, "total": 68 },
+        { "date": "Oct 8", "successRate": 92.8, "successful": 65, "failed": 5, "total": 70 },
+        { "date": "Oct 15", "successRate": 94.3, "successful": 66, "failed": 4, "total": 70 },
+        { "date": "Oct 22", "successRate": 93.1, "successful": 54, "failed": 4, "total": 58 },
+        { "date": "Oct 29", "successRate": 95.0, "successful": 76, "failed": 4, "total": 80 },
+        { "date": "Nov 5", "successRate": 94.2, "successful": 65, "failed": 4, "total": 69 },
+        { "date": "Nov 12", "successRate": 95.5, "successful": 86, "failed": 4, "total": 90 },
+        { "date": "Nov 19", "successRate": 94.1, "successful": 64, "failed": 4, "total": 68 },
+        { "date": "Nov 26", "successRate": 93.8, "successful": 61, "failed": 4, "total": 65 },
+        { "date": "Dec 3", "successRate": 95.0, "successful": 76, "failed": 4, "total": 80 },
+        { "date": "Dec 10", "successRate": 94.5, "successful": 69, "failed": 4, "total": 73 },
+        { "date": "Dec 15", "successRate": 92.8, "successful": 65, "failed": 5, "total": 70 }
+      ],
+      "ip_allocation": [
+        { "date": "Sep 17", "successRate": 93.8, "successful": 45, "failed": 3, "total": 48 },
+        { "date": "Sep 24", "successRate": 95.2, "successful": 50, "failed": 2, "total": 52 },
+        { "date": "Oct 1", "successRate": 95.8, "successful": 55, "failed": 2, "total": 57 },
+        { "date": "Oct 8", "successRate": 94.5, "successful": 52, "failed": 3, "total": 55 },
+        { "date": "Oct 15", "successRate": 96.0, "successful": 48, "failed": 2, "total": 50 },
+        { "date": "Oct 22", "successRate": 94.7, "successful": 36, "failed": 2, "total": 38 },
+        { "date": "Oct 29", "successRate": 96.3, "successful": 65, "failed": 2, "total": 67 },
+        { "date": "Nov 5", "successRate": 95.5, "successful": 53, "failed": 2, "total": 55 },
+        { "date": "Nov 12", "successRate": 96.7, "successful": 73, "failed": 2, "total": 75 },
+        { "date": "Nov 19", "successRate": 95.2, "successful": 50, "failed": 2, "total": 52 },
+        { "date": "Nov 26", "successRate": 94.8, "successful": 45, "failed": 2, "total": 47 },
+        { "date": "Dec 3", "successRate": 96.0, "successful": 48, "failed": 2, "total": 50 },
+        { "date": "Dec 10", "successRate": 95.5, "successful": 53, "failed": 2, "total": 55 },
+        { "date": "Dec 15", "successRate": 94.1, "successful": 48, "failed": 3, "total": 51 }
+      ],
+      "ip_release": [
+        { "date": "Sep 17", "successRate": 87.5, "successful": 35, "failed": 5, "total": 40 },
+        { "date": "Sep 24", "successRate": 90.0, "successful": 36, "failed": 4, "total": 40 },
+        { "date": "Oct 1", "successRate": 91.3, "successful": 42, "failed": 4, "total": 46 },
+        { "date": "Oct 8", "successRate": 89.7, "successful": 52, "failed": 6, "total": 58 },
+        { "date": "Oct 15", "successRate": 91.7, "successful": 55, "failed": 5, "total": 60 },
+        { "date": "Oct 22", "successRate": 90.0, "successful": 36, "failed": 4, "total": 40 },
+        { "date": "Oct 29", "successRate": 92.3, "successful": 48, "failed": 4, "total": 52 },
+        { "date": "Nov 5", "successRate": 91.7, "successful": 44, "failed": 4, "total": 48 },
+        { "date": "Nov 12", "successRate": 93.3, "successful": 56, "failed": 4, "total": 60 },
+        { "date": "Nov 19", "successRate": 91.7, "successful": 44, "failed": 4, "total": 48 },
+        { "date": "Nov 26", "successRate": 90.0, "successful": 36, "failed": 4, "total": 40 },
+        { "date": "Dec 3", "successRate": 92.3, "successful": 48, "failed": 4, "total": 52 },
+        { "date": "Dec 10", "successRate": 91.7, "successful": 44, "failed": 4, "total": 48 },
+        { "date": "Dec 15", "successRate": 89.7, "successful": 52, "failed": 6, "total": 58 }
+      ],
+      "pool_creation": [
+        { "date": "Sep 17", "successRate": 100.0, "successful": 7, "failed": 0, "total": 7 },
+        { "date": "Sep 24", "successRate": 100.0, "successful": 8, "failed": 0, "total": 8 },
+        { "date": "Oct 1", "successRate": 100.0, "successful": 6, "failed": 0, "total": 6 },
+        { "date": "Oct 8", "successRate": 100.0, "successful": 7, "failed": 0, "total": 7 },
+        { "date": "Oct 15", "successRate": 100.0, "successful": 8, "failed": 0, "total": 8 },
+        { "date": "Oct 22", "successRate": 100.0, "successful": 6, "failed": 0, "total": 6 },
+        { "date": "Oct 29", "successRate": 100.0, "successful": 7, "failed": 0, "total": 7 },
+        { "date": "Nov 5", "successRate": 100.0, "successful": 8, "failed": 0, "total": 8 },
+        { "date": "Nov 12", "successRate": 100.0, "successful": 6, "failed": 0, "total": 6 },
+        { "date": "Nov 19", "successRate": 100.0, "successful": 7, "failed": 0, "total": 7 },
+        { "date": "Nov 26", "successRate": 100.0, "successful": 8, "failed": 0, "total": 8 },
+        { "date": "Dec 3", "successRate": 100.0, "successful": 6, "failed": 0, "total": 6 },
+        { "date": "Dec 10", "successRate": 100.0, "successful": 7, "failed": 0, "total": 7 },
+        { "date": "Dec 15", "successRate": 100.0, "successful": 8, "failed": 0, "total": 8 }
+      ],
+      "pool_deletion": [
+        { "date": "Sep 17", "successRate": 100.0, "successful": 3, "failed": 0, "total": 3 },
+        { "date": "Sep 24", "successRate": 100.0, "successful": 4, "failed": 0, "total": 4 },
+        { "date": "Oct 1", "successRate": 100.0, "successful": 3, "failed": 0, "total": 3 },
+        { "date": "Oct 8", "successRate": 100.0, "successful": 4, "failed": 0, "total": 4 },
+        { "date": "Oct 15", "successRate": 100.0, "successful": 3, "failed": 0, "total": 3 },
+        { "date": "Oct 22", "successRate": 100.0, "successful": 4, "failed": 0, "total": 4 },
+        { "date": "Oct 29", "successRate": 100.0, "successful": 3, "failed": 0, "total": 3 },
+        { "date": "Nov 5", "successRate": 100.0, "successful": 4, "failed": 0, "total": 4 },
+        { "date": "Nov 12", "successRate": 100.0, "successful": 3, "failed": 0, "total": 3 },
+        { "date": "Nov 19", "successRate": 100.0, "successful": 4, "failed": 0, "total": 4 },
+        { "date": "Nov 26", "successRate": 100.0, "successful": 3, "failed": 0, "total": 3 },
+        { "date": "Dec 3", "successRate": 100.0, "successful": 4, "failed": 0, "total": 4 },
+        { "date": "Dec 10", "successRate": 100.0, "successful": 3, "failed": 0, "total": 3 },
+        { "date": "Dec 15", "successRate": 100.0, "successful": 4, "failed": 0, "total": 4 }
+      ]
+    }
+  },
+  "changeStats": {
+    "7d": {
+      "all": { "total": 150, "successful": 142, "failed": 8, "successRate": 94.7 },
+      "ip_allocation": { "total": 109, "successful": 104, "failed": 5, "successRate": 95.4 },
+      "ip_release": { "total": 78, "successful": 70, "failed": 8, "successRate": 89.7 },
+      "pool_creation": { "total": 12, "successful": 12, "failed": 0, "successRate": 100.0 },
+      "pool_deletion": { "total": 5, "successful": 5, "failed": 0, "successRate": 100.0 }
+    },
+    "30d": {
+      "all": { "total": 580, "successful": 550, "failed": 30, "successRate": 94.8 },
+      "ip_allocation": { "total": 420, "successful": 402, "failed": 18, "successRate": 95.7 },
+      "ip_release": { "total": 300, "successful": 270, "failed": 30, "successRate": 90.0 },
+      "pool_creation": { "total": 45, "successful": 45, "failed": 0, "successRate": 100.0 },
+      "pool_deletion": { "total": 15, "successful": 15, "failed": 0, "successRate": 100.0 }
+    },
+    "90d": {
+      "all": { "total": 1680, "successful": 1590, "failed": 90, "successRate": 94.6 },
+      "ip_allocation": { "total": 1200, "successful": 1150, "failed": 50, "successRate": 95.8 },
+      "ip_release": { "total": 900, "successful": 810, "failed": 90, "successRate": 90.0 },
+      "pool_creation": { "total": 105, "successful": 105, "failed": 0, "successRate": 100.0 },
+      "pool_deletion": { "total": 45, "successful": 45, "failed": 0, "successRate": 100.0 }
+    }
+  },
+  "changeImpact": [
+    { "type": "ip allocation", "count": 1200, "errors": 50, "warnings": 25, "successRate": 95.8 },
+    { "type": "ip release", "count": 900, "errors": 90, "warnings": 45, "successRate": 90.0 },
+    { "type": "pool creation", "count": 105, "errors": 0, "warnings": 5, "successRate": 100.0 },
+    { "type": "pool deletion", "count": 45, "errors": 0, "warnings": 2, "successRate": 100.0 }
+  ],
+  "approvalWorkflow": {
+    "total": 150,
+    "approved": 128,
+    "pending": 15,
+    "rejected": 7,
+    "approvalRate": 85.3
+  },
+  "rollbackAnalysis": {
+    "count": 8,
+    "recent": [
+      {
+        "timestamp": "2024-12-14T10:30:00Z",
+        "description": "Rollback: IP allocation failed due to pool exhaustion",
+        "user": "admin@ipam.local"
+      },
+      {
+        "timestamp": "2024-12-12T14:20:00Z",
+        "description": "Rollback: Pool creation cancelled due to CIDR overlap",
+        "user": "network.engineer@ipam.local"
+      },
+      {
+        "timestamp": "2024-12-10T09:15:00Z",
+        "description": "Rollback: IP release reverted due to active connections",
+        "user": "operator@ipam.local"
+      },
+      {
+        "timestamp": "2024-12-08T16:45:00Z",
+        "description": "Rollback: Bulk allocation partially failed",
+        "user": "admin@ipam.local"
+      },
+      {
+        "timestamp": "2024-12-05T11:30:00Z",
+        "description": "Rollback: Pool deletion prevented due to active allocations",
+        "user": "network.engineer@ipam.local"
+      },
+      {
+        "timestamp": "2024-12-03T13:20:00Z",
+        "description": "Rollback: IP allocation conflict detected",
+        "user": "operator@ipam.local"
+      },
+      {
+        "timestamp": "2024-12-01T08:10:00Z",
+        "description": "Rollback: Network configuration change reverted",
+        "user": "admin@ipam.local"
+      },
+      {
+        "timestamp": "2024-11-28T15:00:00Z",
+        "description": "Rollback: Pool creation validation failed",
+        "user": "network.engineer@ipam.local"
+      }
+    ]
+  }
+}
+

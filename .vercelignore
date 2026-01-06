@@ -1,0 +1,14 @@
+# Files and directories to ignore during Vercel deployment
+node_modules
+.next
+.git
+.vercel
+*.log
+.env.local
+.env*.local
+.DS_Store
+*.tsbuildinfo
+coverage
+.idea
+.vscode
+

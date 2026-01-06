@@ -1,0 +1,107 @@
+[
+  {
+    "month": "Current",
+    "utilization": 45.2,
+    "availableIPs": 36000,
+    "projected": 45.2,
+    "optimistic": 44.8,
+    "pessimistic": 45.6
+  },
+  {
+    "month": "Jan 2025",
+    "utilization": 46.8,
+    "availableIPs": 35200,
+    "projected": 46.8,
+    "optimistic": 45.3,
+    "pessimistic": 48.5
+  },
+  {
+    "month": "Feb 2025",
+    "utilization": 48.5,
+    "availableIPs": 34400,
+    "projected": 48.5,
+    "optimistic": 46.1,
+    "pessimistic": 51.2
+  },
+  {
+    "month": "Mar 2025",
+    "utilization": 50.1,
+    "availableIPs": 33600,
+    "projected": 50.1,
+    "optimistic": 47.2,
+    "pessimistic": 53.8
+  },
+  {
+    "month": "Apr 2025",
+    "utilization": 51.8,
+    "availableIPs": 32800,
+    "projected": 51.8,
+    "optimistic": 48.5,
+    "pessimistic": 56.2
+  },
+  {
+    "month": "May 2025",
+    "utilization": 53.4,
+    "availableIPs": 32000,
+    "projected": 53.4,
+    "optimistic": 49.8,
+    "pessimistic": 58.5
+  },
+  {
+    "month": "Jun 2025",
+    "utilization": 55.1,
+    "availableIPs": 31200,
+    "projected": 55.1,
+    "optimistic": 51.2,
+    "pessimistic": 60.8
+  },
+  {
+    "month": "Jul 2025",
+    "utilization": 56.7,
+    "availableIPs": 30400,
+    "projected": 56.7,
+    "optimistic": 52.6,
+    "pessimistic": 63.1
+  },
+  {
+    "month": "Aug 2025",
+    "utilization": 58.4,
+    "availableIPs": 29600,
+    "projected": 58.4,
+    "optimistic": 54.1,
+    "pessimistic": 65.4
+  },
+  {
+    "month": "Sep 2025",
+    "utilization": 60.0,
+    "availableIPs": 28800,
+    "projected": 60.0,
+    "optimistic": 55.5,
+    "pessimistic": 67.7
+  },
+  {
+    "month": "Oct 2025",
+    "utilization": 61.7,
+    "availableIPs": 28000,
+    "projected": 61.7,
+    "optimistic": 57.0,
+    "pessimistic": 70.0
+  },
+  {
+    "month": "Nov 2025",
+    "utilization": 63.3,
+    "availableIPs": 27200,
+    "projected": 63.3,
+    "optimistic": 58.5,
+    "pessimistic": 72.3
+  },
+  {
+    "month": "Dec 2025",
+    "utilization": 65.0,
+    "availableIPs": 26400,
+    "projected": 65.0,
+    "optimistic": 60.0,
+    "pessimistic": 74.6
+  }
+]
+

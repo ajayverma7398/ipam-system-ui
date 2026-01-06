@@ -1,0 +1,212 @@
+[
+  {
+    "id": "user-001",
+    "username": "admin",
+    "email": "admin@ipam.local",
+    "name": "System Administrator",
+    "role": "admin",
+    "department": "IT Operations",
+    "created_at": "2023-01-10T08:00:00Z",
+    "last_login": "2024-03-15T08:30:00Z",
+    "is_active": true,
+    "permissions": [
+      "pool.create",
+      "pool.delete",
+      "pool.update",
+      "ip.allocate",
+      "ip.release",
+      "ip.bulk_allocate",
+      "user.create",
+      "user.update",
+      "user.delete",
+      "settings.update",
+      "reports.view",
+      "reports.export",
+      "audit.view"
+    ]
+  },
+  {
+    "id": "user-002",
+    "username": "devops",
+    "email": "devops@ipam.local",
+    "name": "DevOps Engineer",
+    "role": "network_engineer",
+    "department": "DevOps",
+    "created_at": "2023-02-15T10:30:00Z",
+    "last_login": "2024-03-15T12:15:00Z",
+    "is_active": true,
+    "permissions": [
+      "pool.view",
+      "pool.update",
+      "ip.allocate",
+      "ip.release",
+      "ip.bulk_allocate",
+      "reports.view",
+      "reports.export"
+    ]
+  },
+  {
+    "id": "user-003",
+    "username": "security",
+    "email": "security@ipam.local",
+    "name": "Security Administrator",
+    "role": "network_engineer",
+    "department": "Security",
+    "created_at": "2023-03-20T09:15:00Z",
+    "last_login": "2024-03-14T14:10:00Z",
+    "is_active": true,
+    "permissions": [
+      "pool.view",
+      "pool.update",
+      "ip.allocate",
+      "ip.release",
+      "reports.view",
+      "reports.export",
+      "audit.view"
+    ]
+  },
+  {
+    "id": "user-004",
+    "username": "iot-admin",
+    "email": "iot-admin@ipam.local",
+    "name": "IoT Administrator",
+    "role": "operator",
+    "department": "IoT Operations",
+    "created_at": "2023-04-10T11:00:00Z",
+    "last_login": "2024-03-06T09:30:00Z",
+    "is_active": true,
+    "permissions": [
+      "pool.view",
+      "ip.allocate",
+      "ip.release",
+      "reports.view"
+    ]
+  },
+  {
+    "id": "user-005",
+    "username": "rd-admin",
+    "email": "rd-admin@ipam.local",
+    "name": "R&D Network Admin",
+    "role": "operator",
+    "department": "Research & Development",
+    "created_at": "2023-05-05T14:20:00Z",
+    "last_login": "2024-02-29T10:30:00Z",
+    "is_active": true,
+    "permissions": [
+      "pool.view",
+      "pool.create",
+      "ip.allocate",
+      "ip.release",
+      "reports.view"
+    ]
+  },
+  {
+    "id": "user-006",
+    "username": "network-ops",
+    "email": "network-ops@ipam.local",
+    "name": "Network Operations",
+    "role": "network_engineer",
+    "department": "Network Operations",
+    "created_at": "2023-06-12T08:45:00Z",
+    "last_login": "2024-03-10T11:20:00Z",
+    "is_active": true,
+    "permissions": [
+      "pool.view",
+      "pool.update",
+      "ip.allocate",
+      "ip.release",
+      "ip.bulk_allocate",
+      "reports.view",
+      "reports.export"
+    ]
+  },
+  {
+    "id": "user-007",
+    "username": "auditor",
+    "email": "auditor@ipam.local",
+    "name": "Compliance Auditor",
+    "role": "viewer",
+    "department": "Compliance",
+    "created_at": "2023-07-18T13:30:00Z",
+    "last_login": "2024-03-12T09:00:00Z",
+    "is_active": true,
+    "permissions": [
+      "pool.view",
+      "ip.view",
+      "reports.view",
+      "reports.export",
+      "audit.view"
+    ]
+  },
+  {
+    "id": "user-008",
+    "username": "support",
+    "email": "support@ipam.local",
+    "name": "IT Support",
+    "role": "operator",
+    "department": "IT Support",
+    "created_at": "2023-08-22T10:15:00Z",
+    "last_login": "2024-03-08T14:00:00Z",
+    "is_active": true,
+    "permissions": [
+      "pool.view",
+      "ip.allocate",
+      "ip.release",
+      "reports.view"
+    ]
+  },
+  {
+    "id": "user-009",
+    "username": "manager",
+    "email": "manager@ipam.local",
+    "name": "Network Manager",
+    "role": "network_engineer",
+    "department": "Network Operations",
+    "created_at": "2023-09-05T09:00:00Z",
+    "last_login": "2024-03-13T15:00:00Z",
+    "is_active": true,
+    "permissions": [
+      "pool.view",
+      "pool.create",
+      "pool.update",
+      "ip.allocate",
+      "ip.release",
+      "ip.bulk_allocate",
+      "reports.view",
+      "reports.export",
+      "audit.view"
+    ]
+  },
+  {
+    "id": "user-010",
+    "username": "readonly",
+    "email": "readonly@ipam.local",
+    "name": "Read-Only User",
+    "role": "viewer",
+    "department": "Business Operations",
+    "created_at": "2023-10-15T11:30:00Z",
+    "last_login": "2024-03-01T08:00:00Z",
+    "is_active": true,
+    "permissions": [
+      "pool.view",
+      "ip.view",
+      "reports.view"
+    ]
+  },
+  {
+    "id": "user-011",
+    "username": "inactive-user",
+    "email": "inactive@ipam.local",
+    "name": "Inactive User",
+    "role": "operator",
+    "department": "IT Operations",
+    "created_at": "2023-11-20T14:00:00Z",
+    "last_login": "2024-01-15T10:00:00Z",
+    "is_active": false,
+    "permissions": [
+      "pool.view",
+      "ip.view"
+    ]
+  }
+]
+

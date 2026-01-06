@@ -1,0 +1,116 @@
+{
+  "add-capacity": {
+    "default": [
+      { "month": "Current", "utilization": 45.2, "available": 36000 },
+      { "month": "Month 1", "utilization": 46.8, "available": 35200 },
+      { "month": "Month 2", "utilization": 48.5, "available": 34400 },
+      { "month": "Month 3", "utilization": 50.1, "available": 33600 },
+      { "month": "Month 4", "utilization": 51.8, "available": 32800 },
+      { "month": "Month 5", "utilization": 53.4, "available": 32000 },
+      { "month": "Month 6", "utilization": 55.1, "available": 31200 },
+      { "month": "Month 7", "utilization": 56.7, "available": 30400 },
+      { "month": "Month 8", "utilization": 58.4, "available": 29600 },
+      { "month": "Month 9", "utilization": 60.0, "available": 28800 },
+      { "month": "Month 10", "utilization": 61.7, "available": 28000 },
+      { "month": "Month 11", "utilization": 63.3, "available": 27200 },
+      { "month": "Month 12", "utilization": 65.0, "available": 26400 }
+    ],
+    "high-growth": [
+      { "month": "Current", "utilization": 45.2, "available": 36000 },
+      { "month": "Month 1", "utilization": 48.5, "available": 34200 },
+      { "month": "Month 2", "utilization": 52.1, "available": 32400 },
+      { "month": "Month 3", "utilization": 55.8, "available": 30600 },
+      { "month": "Month 4", "utilization": 59.6, "available": 28800 },
+      { "month": "Month 5", "utilization": 63.5, "available": 27000 },
+      { "month": "Month 6", "utilization": 67.5, "available": 25200 },
+      { "month": "Month 7", "utilization": 71.6, "available": 23400 },
+      { "month": "Month 8", "utilization": 75.8, "available": 21600 },
+      { "month": "Month 9", "utilization": 80.1, "available": 19800 },
+      { "month": "Month 10", "utilization": 84.5, "available": 18000 },
+      { "month": "Month 11", "utilization": 89.0, "available": 16200 },
+      { "month": "Month 12", "utilization": 93.6, "available": 14400 }
+    ]
+  },
+  "remove-capacity": {
+    "default": [
+      { "month": "Current", "utilization": 45.2, "available": 36000 },
+      { "month": "Month 1", "utilization": 48.8, "available": 33200 },
+      { "month": "Month 2", "utilization": 52.5, "available": 30400 },
+      { "month": "Month 3", "utilization": 56.3, "available": 27600 },
+      { "month": "Month 4", "utilization": 60.2, "available": 24800 },
+      { "month": "Month 5", "utilization": 64.2, "available": 22000 },
+      { "month": "Month 6", "utilization": 68.3, "available": 19200 },
+      { "month": "Month 7", "utilization": 72.5, "available": 16400 },
+      { "month": "Month 8", "utilization": 76.8, "available": 13600 },
+      { "month": "Month 9", "utilization": 81.2, "available": 10800 },
+      { "month": "Month 10", "utilization": 85.7, "available": 8000 },
+      { "month": "Month 11", "utilization": 90.3, "available": 5200 },
+      { "month": "Month 12", "utilization": 95.0, "available": 2400 }
+    ]
+  },
+  "growth-adjust": {
+    "low-growth": [
+      { "month": "Current", "utilization": 45.2, "available": 36000 },
+      { "month": "Month 1", "utilization": 45.9, "available": 35800 },
+      { "month": "Month 2", "utilization": 46.6, "available": 35600 },
+      { "month": "Month 3", "utilization": 47.3, "available": 35400 },
+      { "month": "Month 4", "utilization": 48.0, "available": 35200 },
+      { "month": "Month 5", "utilization": 48.7, "available": 35000 },
+      { "month": "Month 6", "utilization": 49.4, "available": 34800 },
+      { "month": "Month 7", "utilization": 50.1, "available": 34600 },
+      { "month": "Month 8", "utilization": 50.8, "available": 34400 },
+      { "month": "Month 9", "utilization": 51.5, "available": 34200 },
+      { "month": "Month 10", "utilization": 52.2, "available": 34000 },
+      { "month": "Month 11", "utilization": 52.9, "available": 33800 },
+      { "month": "Month 12", "utilization": 53.6, "available": 33600 }
+    ],
+    "medium-growth": [
+      { "month": "Current", "utilization": 45.2, "available": 36000 },
+      { "month": "Month 1", "utilization": 46.8, "available": 35200 },
+      { "month": "Month 2", "utilization": 48.5, "available": 34400 },
+      { "month": "Month 3", "utilization": 50.1, "available": 33600 },
+      { "month": "Month 4", "utilization": 51.8, "available": 32800 },
+      { "month": "Month 5", "utilization": 53.4, "available": 32000 },
+      { "month": "Month 6", "utilization": 55.1, "available": 31200 },
+      { "month": "Month 7", "utilization": 56.7, "available": 30400 },
+      { "month": "Month 8", "utilization": 58.4, "available": 29600 },
+      { "month": "Month 9", "utilization": 60.0, "available": 28800 },
+      { "month": "Month 10", "utilization": 61.7, "available": 28000 },
+      { "month": "Month 11", "utilization": 63.3, "available": 27200 },
+      { "month": "Month 12", "utilization": 65.0, "available": 26400 }
+    ],
+    "high-growth": [
+      { "month": "Current", "utilization": 45.2, "available": 36000 },
+      { "month": "Month 1", "utilization": 48.5, "available": 34200 },
+      { "month": "Month 2", "utilization": 52.1, "available": 32400 },
+      { "month": "Month 3", "utilization": 55.8, "available": 30600 },
+      { "month": "Month 4", "utilization": 59.6, "available": 28800 },
+      { "month": "Month 5", "utilization": 63.5, "available": 27000 },
+      { "month": "Month 6", "utilization": 67.5, "available": 25200 },
+      { "month": "Month 7", "utilization": 71.6, "available": 23400 },
+      { "month": "Month 8", "utilization": 75.8, "available": 21600 },
+      { "month": "Month 9", "utilization": 80.1, "available": 19800 },
+      { "month": "Month 10", "utilization": 84.5, "available": 18000 },
+      { "month": "Month 11", "utilization": 89.0, "available": 16200 },
+      { "month": "Month 12", "utilization": 93.6, "available": 14400 }
+    ]
+  },
+  "redesign": {
+    "default": [
+      { "month": "Current", "utilization": 45.2, "available": 36000 },
+      { "month": "Month 1", "utilization": 42.5, "available": 38000 },
+      { "month": "Month 2", "utilization": 44.1, "available": 37500 },
+      { "month": "Month 3", "utilization": 45.8, "available": 37000 },
+      { "month": "Month 4", "utilization": 47.5, "available": 36500 },
+      { "month": "Month 5", "utilization": 49.2, "available": 36000 },
+      { "month": "Month 6", "utilization": 50.9, "available": 35500 },
+      { "month": "Month 7", "utilization": 52.6, "available": 35000 },
+      { "month": "Month 8", "utilization": 54.3, "available": 34500 },
+      { "month": "Month 9", "utilization": 56.0, "available": 34000 },
+      { "month": "Month 10", "utilization": 57.7, "available": 33500 },
+      { "month": "Month 11", "utilization": 59.4, "available": 33000 },
+      { "month": "Month 12", "utilization": 61.1, "available": 32500 }
+    ]
+  }
+}
+

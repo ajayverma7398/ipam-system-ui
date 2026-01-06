@@ -1,0 +1,533 @@
+{
+  "stats": {
+    "total_pools": 18,
+    "public_pools": 3,
+    "private_pools": 13,
+    "multicast_pools": 2,
+    "allocated_ips": 12456,
+    "free_ips": 53187,
+    "total_ips": 65643,
+    "utilization_rate": 18.97,
+    "active_users": 24,
+    "recent_allocations": 12
+  },
+  "top_utilized_pools": [
+    {
+      "cidr": "172.16.0.0/20",
+      "utilization": 79.26,
+      "allocated": 3245,
+      "total": 4096,
+      "type": "private",
+      "pool_id": "pool-006"
+    },
+    {
+      "cidr": "192.168.1.0/24",
+      "utilization": 74.41,
+      "allocated": 187,
+      "total": 256,
+      "type": "private",
+      "pool_id": "pool-001"
+    },
+    {
+      "cidr": "192.168.100.0/24",
+      "utilization": 62.20,
+      "allocated": 156,
+      "total": 256,
+      "type": "private",
+      "pool_id": "pool-016"
+    },
+    {
+      "cidr": "172.16.32.0/20",
+      "utilization": 52.66,
+      "allocated": 2156,
+      "total": 4096,
+      "type": "private",
+      "pool_id": "pool-008"
+    },
+    {
+      "cidr": "192.168.10.0/24",
+      "utilization": 35.83,
+      "allocated": 89,
+      "total": 256,
+      "type": "private",
+      "pool_id": "pool-004"
+    },
+    {
+      "cidr": "203.0.113.0/24",
+      "utilization": 34.77,
+      "allocated": 89,
+      "total": 256,
+      "type": "public",
+      "pool_id": "pool-011"
+    },
+    {
+      "cidr": "192.0.2.0/24",
+      "utilization": 26.38,
+      "allocated": 67,
+      "total": 256,
+      "type": "public",
+      "pool_id": "pool-013"
+    },
+    {
+      "cidr": "172.16.16.0/20",
+      "utilization": 21.78,
+      "allocated": 892,
+      "total": 4096,
+      "type": "private",
+      "pool_id": "pool-007"
+    },
+    {
+      "cidr": "192.168.2.0/24",
+      "utilization": 18.50,
+      "allocated": 45,
+      "total": 256,
+      "type": "private",
+      "pool_id": "pool-002"
+    },
+    {
+      "cidr": "10.0.0.0/16",
+      "utilization": 18.84,
+      "allocated": 12345,
+      "total": 65536,
+      "type": "private",
+      "pool_id": "pool-009"
+    }
+  ],
+  "utilization_trend": [
+    {
+      "date": "2024-02-15",
+      "allocated": 11800,
+      "available": 53843,
+      "reserved": 4
+    },
+    {
+      "date": "2024-02-16",
+      "allocated": 11850,
+      "available": 53793,
+      "reserved": 4
+    },
+    {
+      "date": "2024-02-17",
+      "allocated": 11900,
+      "available": 53743,
+      "reserved": 4
+    },
+    {
+      "date": "2024-02-18",
+      "allocated": 11920,
+      "available": 53723,
+      "reserved": 4
+    },
+    {
+      "date": "2024-02-19",
+      "allocated": 11950,
+      "available": 53693,
+      "reserved": 4
+    },
+    {
+      "date": "2024-02-20",
+      "allocated": 12000,
+      "available": 53643,
+      "reserved": 4
+    },
+    {
+      "date": "2024-02-21",
+      "allocated": 12030,
+      "available": 53613,
+      "reserved": 4
+    },
+    {
+      "date": "2024-02-22",
+      "allocated": 12080,
+      "available": 53563,
+      "reserved": 4
+    },
+    {
+      "date": "2024-02-23",
+      "allocated": 12100,
+      "available": 53543,
+      "reserved": 4
+    },
+    {
+      "date": "2024-02-24",
+      "allocated": 12120,
+      "available": 53523,
+      "reserved": 4
+    },
+    {
+      "date": "2024-02-25",
+      "allocated": 12150,
+      "available": 53493,
+      "reserved": 4
+    },
+    {
+      "date": "2024-02-26",
+      "allocated": 12180,
+      "available": 53463,
+      "reserved": 4
+    },
+    {
+      "date": "2024-02-27",
+      "allocated": 12200,
+      "available": 53443,
+      "reserved": 4
+    },
+    {
+      "date": "2024-02-28",
+      "allocated": 12230,
+      "available": 53413,
+      "reserved": 4
+    },
+    {
+      "date": "2024-02-29",
+      "allocated": 12250,
+      "available": 53393,
+      "reserved": 4
+    },
+    {
+      "date": "2024-03-01",
+      "allocated": 12280,
+      "available": 53363,
+      "reserved": 4
+    },
+    {
+      "date": "2024-03-02",
+      "allocated": 12300,
+      "available": 53343,
+      "reserved": 4
+    },
+    {
+      "date": "2024-03-03",
+      "allocated": 12320,
+      "available": 53323,
+      "reserved": 4
+    },
+    {
+      "date": "2024-03-04",
+      "allocated": 12340,
+      "available": 53303,
+      "reserved": 4
+    },
+    {
+      "date": "2024-03-05",
+      "allocated": 12360,
+      "available": 53283,
+      "reserved": 4
+    },
+    {
+      "date": "2024-03-06",
+      "allocated": 12380,
+      "available": 53263,
+      "reserved": 4
+    },
+    {
+      "date": "2024-03-07",
+      "allocated": 12400,
+      "available": 53243,
+      "reserved": 4
+    },
+    {
+      "date": "2024-03-08",
+      "allocated": 12410,
+      "available": 53233,
+      "reserved": 4
+    },
+    {
+      "date": "2024-03-09",
+      "allocated": 12420,
+      "available": 53223,
+      "reserved": 4
+    },
+    {
+      "date": "2024-03-10",
+      "allocated": 12430,
+      "available": 53213,
+      "reserved": 4
+    },
+    {
+      "date": "2024-03-11",
+      "allocated": 12440,
+      "available": 53203,
+      "reserved": 4
+    },
+    {
+      "date": "2024-03-12",
+      "allocated": 12450,
+      "available": 53193,
+      "reserved": 4
+    },
+    {
+      "date": "2024-03-13",
+      "allocated": 12452,
+      "available": 53191,
+      "reserved": 4
+    },
+    {
+      "date": "2024-03-14",
+      "allocated": 12454,
+      "available": 53189,
+      "reserved": 4
+    },
+    {
+      "date": "2024-03-15",
+      "allocated": 12456,
+      "available": 53187,
+      "reserved": 4
+    }
+  ],
+  "recent_activities": [
+    {
+      "id": "act-001",
+      "timestamp": "2024-03-15T14:30:00Z",
+      "type": "allocation",
+      "message": "Allocated 192.168.1.220 to search-server-01.prod.local",
+      "user": "admin@ipam.local",
+      "ip_address": "192.168.1.220",
+      "pool_id": "pool-001"
+    },
+    {
+      "id": "act-002",
+      "timestamp": "2024-03-15T12:15:00Z",
+      "type": "allocation",
+      "message": "Allocated 172.16.32.250 to container-redis-01.k8s.local",
+      "user": "devops@ipam.local",
+      "ip_address": "172.16.32.250",
+      "pool_id": "pool-008"
+    },
+    {
+      "id": "act-003",
+      "timestamp": "2024-03-15T10:45:00Z",
+      "type": "pool_created",
+      "message": "Created new pool 10.10.0.0/16 for R&D network",
+      "user": "admin@ipam.local",
+      "pool_id": "pool-018"
+    },
+    {
+      "id": "act-004",
+      "timestamp": "2024-03-14T16:20:00Z",
+      "type": "release",
+      "message": "Released 192.168.2.150 from test-expired-01.dev.local",
+      "user": "devops@ipam.local",
+      "ip_address": "192.168.2.150",
+      "pool_id": "pool-002"
+    },
+    {
+      "id": "act-005",
+      "timestamp": "2024-03-14T14:10:00Z",
+      "type": "allocation",
+      "message": "Allocated 192.168.100.100 to camera-exit-01.security.local",
+      "user": "security@ipam.local",
+      "ip_address": "192.168.100.100",
+      "pool_id": "pool-016"
+    },
+    {
+      "id": "act-006",
+      "timestamp": "2024-03-14T11:30:00Z",
+      "type": "allocation",
+      "message": "Bulk allocated 10 IPs from pool 172.16.32.0/20",
+      "user": "devops@ipam.local",
+      "pool_id": "pool-008"
+    },
+    {
+      "id": "act-007",
+      "timestamp": "2024-03-13T15:00:00Z",
+      "type": "allocation",
+      "message": "Allocated 10.1.20.10 to vpn-client-005.branch.local",
+      "user": "admin@ipam.local",
+      "ip_address": "10.1.20.10",
+      "pool_id": "pool-010"
+    },
+    {
+      "id": "act-008",
+      "timestamp": "2024-03-13T13:45:00Z",
+      "type": "pool_updated",
+      "message": "Updated pool 192.168.1.0/24 utilization metrics",
+      "user": "system",
+      "pool_id": "pool-001"
+    },
+    {
+      "id": "act-009",
+      "timestamp": "2024-03-12T10:20:00Z",
+      "type": "allocation",
+      "message": "Allocated 192.168.200.30 to printer-exec-01.printers.local",
+      "user": "admin@ipam.local",
+      "ip_address": "192.168.200.30",
+      "pool_id": "pool-017"
+    },
+    {
+      "id": "act-010",
+      "timestamp": "2024-03-12T09:15:00Z",
+      "type": "release",
+      "message": "Released 10.1.2.50 from expired VPN client",
+      "user": "admin@ipam.local",
+      "ip_address": "10.1.2.50",
+      "pool_id": "pool-010"
+    },
+    {
+      "id": "act-011",
+      "timestamp": "2024-03-11T16:30:00Z",
+      "type": "allocation",
+      "message": "Allocated 172.16.32.150 to k8s-ingress-01.k8s.local",
+      "user": "devops@ipam.local",
+      "ip_address": "172.16.32.150",
+      "pool_id": "pool-008"
+    },
+    {
+      "id": "act-012",
+      "timestamp": "2024-03-11T14:00:00Z",
+      "type": "allocation",
+      "message": "Allocated 192.168.100.75 to camera-reception-01.security.local",
+      "user": "security@ipam.local",
+      "ip_address": "192.168.100.75",
+      "pool_id": "pool-016"
+    },
+    {
+      "id": "act-013",
+      "timestamp": "2024-03-10T15:45:00Z",
+      "type": "pool_updated",
+      "message": "Updated utilization for pool 172.16.0.0/20",
+      "user": "system",
+      "pool_id": "pool-006"
+    },
+    {
+      "id": "act-014",
+      "timestamp": "2024-03-10T11:20:00Z",
+      "type": "allocation",
+      "message": "Allocated 10.0.25.10 to backup-dc-01.corp.local",
+      "user": "admin@ipam.local",
+      "ip_address": "10.0.25.10",
+      "pool_id": "pool-009"
+    },
+    {
+      "id": "act-015",
+      "timestamp": "2024-03-09T13:30:00Z",
+      "type": "allocation",
+      "message": "Allocated 192.168.1.175 to queue-server-01.prod.local",
+      "user": "admin@ipam.local",
+      "ip_address": "192.168.1.175",
+      "pool_id": "pool-001"
+    },
+    {
+      "id": "act-016",
+      "timestamp": "2024-03-08T10:15:00Z",
+      "type": "release",
+      "message": "Released 172.16.0.250 from expired backup server",
+      "user": "admin@ipam.local",
+      "ip_address": "172.16.0.250",
+      "pool_id": "pool-006"
+    },
+    {
+      "id": "act-017",
+      "timestamp": "2024-03-07T14:45:00Z",
+      "type": "allocation",
+      "message": "Allocated 10.0.50.10 to wifi-controller-01.corp.local",
+      "user": "admin@ipam.local",
+      "ip_address": "10.0.50.10",
+      "pool_id": "pool-009"
+    },
+    {
+      "id": "act-018",
+      "timestamp": "2024-03-06T09:30:00Z",
+      "type": "allocation",
+      "message": "Allocated 192.168.10.150 to sensor-motion-01.iot.local",
+      "user": "iot-admin@ipam.local",
+      "ip_address": "192.168.10.150",
+      "pool_id": "pool-004"
+    },
+    {
+      "id": "act-019",
+      "timestamp": "2024-03-05T16:00:00Z",
+      "type": "allocation",
+      "message": "Allocated 172.16.1.100 to dc-vm-02.datacenter.local",
+      "user": "admin@ipam.local",
+      "ip_address": "172.16.1.100",
+      "pool_id": "pool-006"
+    },
+    {
+      "id": "act-020",
+      "timestamp": "2024-03-04T11:20:00Z",
+      "type": "pool_created",
+      "message": "Created new pool 192.168.200.0/24 for printers",
+      "user": "admin@ipam.local",
+      "pool_id": "pool-017"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "alert-001",
+      "type": "warning",
+      "message": "Pool 172.16.0.0/20 utilization is above 75% (79.26%)",
+      "timestamp": "2024-03-15T08:00:00Z",
+      "pool_id": "pool-006",
+      "severity": "medium"
+    },
+    {
+      "id": "alert-002",
+      "type": "warning",
+      "message": "Pool 192.168.1.0/24 utilization is above 70% (74.41%)",
+      "timestamp": "2024-03-14T09:00:00Z",
+      "pool_id": "pool-001",
+      "severity": "medium"
+    },
+    {
+      "id": "alert-003",
+      "type": "info",
+      "message": "3 expired allocations detected - Consider cleanup",
+      "timestamp": "2024-03-13T10:00:00Z",
+      "severity": "low"
+    },
+    {
+      "id": "alert-004",
+      "type": "warning",
+      "message": "Pool 192.168.100.0/24 utilization is above 60% (62.20%)",
+      "timestamp": "2024-03-12T08:00:00Z",
+      "pool_id": "pool-016",
+      "severity": "medium"
+    },
+    {
+      "id": "alert-005",
+      "type": "error",
+      "message": "IP address conflict detected: 192.168.1.10 appears in multiple pools",
+      "timestamp": "2024-03-11T14:30:00Z",
+      "severity": "high"
+    },
+    {
+      "id": "alert-006",
+      "type": "info",
+      "message": "12 new allocations in the last 7 days",
+      "timestamp": "2024-03-10T09:00:00Z",
+      "severity": "low"
+    },
+    {
+      "id": "alert-007",
+      "type": "warning",
+      "message": "VPN client allocation 10.1.2.50 expired on 2024-01-15",
+      "timestamp": "2024-03-09T11:00:00Z",
+      "ip_address": "10.1.2.50",
+      "severity": "medium"
+    },
+    {
+      "id": "alert-008",
+      "type": "info",
+      "message": "Backup completed successfully for all pools",
+      "timestamp": "2024-03-08T02:00:00Z",
+      "severity": "low"
+    },
+    {
+      "id": "alert-009",
+      "type": "warning",
+      "message": "Pool 172.16.32.0/20 approaching 60% utilization (52.66%)",
+      "timestamp": "2024-03-07T08:00:00Z",
+      "pool_id": "pool-008",
+      "severity": "medium"
+    },
+    {
+      "id": "alert-010",
+      "type": "info",
+      "message": "System maintenance scheduled for 2024-03-20 02:00 AM",
+      "timestamp": "2024-03-06T10:00:00Z",
+      "severity": "low"
+    }
+  ]
+}
+

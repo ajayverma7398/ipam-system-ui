@@ -1,0 +1,862 @@
+[
+  {
+    "id": "act-001",
+    "type": "ip_allocation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-03-15T14:30:00Z",
+    "description": "Allocated IP address 192.168.1.220 to search-server-01.prod.local",
+    "details": {
+      "ip_address": "192.168.1.220",
+      "pool_id": "pool-001",
+      "hostname": "search-server-01.prod.local",
+      "device_id": "svr-search-001",
+      "device_type": "server",
+      "allocation_id": "alloc-092"
+    },
+    "ip_address": "192.168.1.220",
+    "pool_id": "pool-001",
+    "severity": "info"
+  },
+  {
+    "id": "act-002",
+    "type": "ip_allocation",
+    "user": "devops@ipam.local",
+    "timestamp": "2024-03-15T12:15:00Z",
+    "description": "Allocated IP address 172.16.32.250 to container-redis-01.k8s.local",
+    "details": {
+      "ip_address": "172.16.32.250",
+      "pool_id": "pool-008",
+      "hostname": "container-redis-01.k8s.local",
+      "device_id": "container-003",
+      "device_type": "container",
+      "allocation_id": "alloc-093"
+    },
+    "ip_address": "172.16.32.250",
+    "pool_id": "pool-008",
+    "severity": "info"
+  },
+  {
+    "id": "act-003",
+    "type": "pool_creation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-03-15T10:45:00Z",
+    "description": "Created new IP pool 10.10.0.0/16 for R&D network",
+    "details": {
+      "pool_id": "pool-018",
+      "cidr": "10.10.0.0/16",
+      "type": "private",
+      "ip_class": "A",
+      "total_hosts": 65536,
+      "description": "Research and development network - Labs and testing"
+    },
+    "pool_id": "pool-018",
+    "severity": "info"
+  },
+  {
+    "id": "act-004",
+    "type": "ip_release",
+    "user": "devops@ipam.local",
+    "timestamp": "2024-03-14T16:20:00Z",
+    "description": "Released IP address 192.168.2.150 from expired test server",
+    "details": {
+      "ip_address": "192.168.2.150",
+      "pool_id": "pool-002",
+      "hostname": "test-expired-01.dev.local",
+      "device_id": "svr-test-exp-001",
+      "reason": "Expired allocation",
+      "allocation_id": "alloc-055"
+    },
+    "ip_address": "192.168.2.150",
+    "pool_id": "pool-002",
+    "severity": "info"
+  },
+  {
+    "id": "act-005",
+    "type": "ip_allocation",
+    "user": "security@ipam.local",
+    "timestamp": "2024-03-14T14:10:00Z",
+    "description": "Allocated IP address 192.168.100.100 to camera-exit-01.security.local",
+    "details": {
+      "ip_address": "192.168.100.100",
+      "pool_id": "pool-016",
+      "hostname": "camera-exit-01.security.local",
+      "device_id": "cam-005",
+      "device_type": "iot",
+      "allocation_id": "alloc-095"
+    },
+    "ip_address": "192.168.100.100",
+    "pool_id": "pool-016",
+    "severity": "info"
+  },
+  {
+    "id": "act-006",
+    "type": "ip_allocation",
+    "user": "devops@ipam.local",
+    "timestamp": "2024-03-14T11:30:00Z",
+    "description": "Bulk allocated 10 IP addresses from pool 172.16.32.0/20",
+    "details": {
+      "pool_id": "pool-008",
+      "count": 10,
+      "starting_ip": "172.16.32.100",
+      "ending_ip": "172.16.32.109",
+      "mode": "sequential",
+      "purpose": "Kubernetes cluster expansion"
+    },
+    "pool_id": "pool-008",
+    "severity": "info"
+  },
+  {
+    "id": "act-007",
+    "type": "system_alert",
+    "user": "system",
+    "timestamp": "2024-03-14T09:00:00Z",
+    "description": "Pool 192.168.1.0/24 utilization exceeded 70% threshold",
+    "details": {
+      "pool_id": "pool-001",
+      "utilization": 74.41,
+      "threshold": 70,
+      "allocated": 187,
+      "total": 256,
+      "alert_type": "utilization_warning"
+    },
+    "pool_id": "pool-001",
+    "severity": "warning"
+  },
+  {
+    "id": "act-008",
+    "type": "ip_allocation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-03-13T15:00:00Z",
+    "description": "Allocated IP address 10.1.20.10 to vpn-client-005.branch.local",
+    "details": {
+      "ip_address": "10.1.20.10",
+      "pool_id": "pool-010",
+      "hostname": "vpn-client-005.branch.local",
+      "device_id": "vpn-005",
+      "device_type": "other",
+      "expires_at": "2024-12-31T23:59:59Z",
+      "allocation_id": "alloc-091"
+    },
+    "ip_address": "10.1.20.10",
+    "pool_id": "pool-010",
+    "severity": "info"
+  },
+  {
+    "id": "act-009",
+    "type": "pool_creation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-03-13T13:45:00Z",
+    "description": "Updated pool 192.168.1.0/24 utilization metrics",
+    "details": {
+      "pool_id": "pool-001",
+      "action": "metrics_update",
+      "previous_utilization": 73.82,
+      "current_utilization": 74.41,
+      "allocated_change": 2
+    },
+    "pool_id": "pool-001",
+    "severity": "info"
+  },
+  {
+    "id": "act-010",
+    "type": "ip_release",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-03-12T10:20:00Z",
+    "description": "Released IP address 10.1.2.50 from expired VPN client",
+    "details": {
+      "ip_address": "10.1.2.50",
+      "pool_id": "pool-010",
+      "hostname": "vpn-client-003.branch.local",
+      "device_id": "vpn-003",
+      "reason": "Expired allocation - Former employee",
+      "expired_at": "2024-01-15T23:59:59Z",
+      "allocation_id": "alloc-056"
+    },
+    "ip_address": "10.1.2.50",
+    "pool_id": "pool-010",
+    "severity": "info"
+  },
+  {
+    "id": "act-011",
+    "type": "ip_allocation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-03-12T09:15:00Z",
+    "description": "Allocated IP address 192.168.200.30 to printer-exec-01.printers.local",
+    "details": {
+      "ip_address": "192.168.200.30",
+      "pool_id": "pool-017",
+      "hostname": "printer-exec-01.printers.local",
+      "device_id": "printer-004",
+      "device_type": "other",
+      "allocation_id": "alloc-084"
+    },
+    "ip_address": "192.168.200.30",
+    "pool_id": "pool-017",
+    "severity": "info"
+  },
+  {
+    "id": "act-012",
+    "type": "system_alert",
+    "user": "system",
+    "timestamp": "2024-03-12T08:00:00Z",
+    "description": "Pool 192.168.100.0/24 utilization exceeded 60% threshold",
+    "details": {
+      "pool_id": "pool-016",
+      "utilization": 62.20,
+      "threshold": 60,
+      "allocated": 156,
+      "total": 256,
+      "alert_type": "utilization_warning"
+    },
+    "pool_id": "pool-016",
+    "severity": "warning"
+  },
+  {
+    "id": "act-013",
+    "type": "ip_allocation",
+    "user": "devops@ipam.local",
+    "timestamp": "2024-03-11T16:30:00Z",
+    "description": "Allocated IP address 172.16.32.150 to k8s-ingress-01.k8s.local",
+    "details": {
+      "ip_address": "172.16.32.150",
+      "pool_id": "pool-008",
+      "hostname": "k8s-ingress-01.k8s.local",
+      "device_id": "svr-k8s-ing-001",
+      "device_type": "server",
+      "allocation_id": "alloc-083"
+    },
+    "ip_address": "172.16.32.150",
+    "pool_id": "pool-008",
+    "severity": "info"
+  },
+  {
+    "id": "act-014",
+    "type": "ip_allocation",
+    "user": "security@ipam.local",
+    "timestamp": "2024-03-11T14:00:00Z",
+    "description": "Allocated IP address 192.168.100.75 to camera-reception-01.security.local",
+    "details": {
+      "ip_address": "192.168.100.75",
+      "pool_id": "pool-016",
+      "hostname": "camera-reception-01.security.local",
+      "device_id": "cam-004",
+      "device_type": "iot",
+      "allocation_id": "alloc-081"
+    },
+    "ip_address": "192.168.100.75",
+    "pool_id": "pool-016",
+    "severity": "info"
+  },
+  {
+    "id": "act-015",
+    "type": "system_alert",
+    "user": "system",
+    "timestamp": "2024-03-11T14:30:00Z",
+    "description": "IP address conflict detected: 192.168.1.10 appears in multiple pools",
+    "details": {
+      "ip_address": "192.168.1.10",
+      "conflicting_pools": ["pool-001", "pool-002"],
+      "alert_type": "ip_conflict",
+      "severity": "high"
+    },
+    "ip_address": "192.168.1.10",
+    "severity": "error"
+  },
+  {
+    "id": "act-016",
+    "type": "pool_creation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-03-10T15:45:00Z",
+    "description": "Updated utilization for pool 172.16.0.0/20",
+    "details": {
+      "pool_id": "pool-006",
+      "action": "metrics_update",
+      "previous_utilization": 78.95,
+      "current_utilization": 79.26,
+      "allocated_change": 13
+    },
+    "pool_id": "pool-006",
+    "severity": "info"
+  },
+  {
+    "id": "act-017",
+    "type": "ip_allocation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-03-10T11:20:00Z",
+    "description": "Allocated IP address 10.0.25.10 to backup-dc-01.corp.local",
+    "details": {
+      "ip_address": "10.0.25.10",
+      "pool_id": "pool-009",
+      "hostname": "backup-dc-01.corp.local",
+      "device_id": "svr-backup-dc-001",
+      "device_type": "server",
+      "allocation_id": "alloc-085"
+    },
+    "ip_address": "10.0.25.10",
+    "pool_id": "pool-009",
+    "severity": "info"
+  },
+  {
+    "id": "act-018",
+    "type": "system_alert",
+    "user": "system",
+    "timestamp": "2024-03-10T09:00:00Z",
+    "description": "12 new allocations in the last 7 days",
+    "details": {
+      "period": "7_days",
+      "allocation_count": 12,
+      "alert_type": "activity_summary",
+      "trend": "increasing"
+    },
+    "severity": "info"
+  },
+  {
+    "id": "act-019",
+    "type": "ip_allocation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-03-09T13:30:00Z",
+    "description": "Allocated IP address 192.168.1.175 to queue-server-01.prod.local",
+    "details": {
+      "ip_address": "192.168.1.175",
+      "pool_id": "pool-001",
+      "hostname": "queue-server-01.prod.local",
+      "device_id": "svr-queue-001",
+      "device_type": "server",
+      "allocation_id": "alloc-086"
+    },
+    "ip_address": "192.168.1.175",
+    "pool_id": "pool-001",
+    "severity": "info"
+  },
+  {
+    "id": "act-020",
+    "type": "system_alert",
+    "user": "system",
+    "timestamp": "2024-03-09T11:00:00Z",
+    "description": "VPN client allocation 10.1.2.50 expired on 2024-01-15",
+    "details": {
+      "ip_address": "10.1.2.50",
+      "pool_id": "pool-010",
+      "expired_at": "2024-01-15T23:59:59Z",
+      "days_since_expiry": 53,
+      "alert_type": "expired_allocation",
+      "allocation_id": "alloc-056"
+    },
+    "ip_address": "10.1.2.50",
+    "pool_id": "pool-010",
+    "severity": "warning"
+  },
+  {
+    "id": "act-021",
+    "type": "ip_release",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-03-08T10:15:00Z",
+    "description": "Released IP address 172.16.0.250 from expired backup server",
+    "details": {
+      "ip_address": "172.16.0.250",
+      "pool_id": "pool-006",
+      "hostname": "dc-backup-old-01.datacenter.local",
+      "device_id": "svr-dc-backup-001",
+      "reason": "Expired allocation - Replaced by new system",
+      "expired_at": "2024-03-01T23:59:59Z",
+      "allocation_id": "alloc-057"
+    },
+    "ip_address": "172.16.0.250",
+    "pool_id": "pool-006",
+    "severity": "info"
+  },
+  {
+    "id": "act-022",
+    "type": "system_alert",
+    "user": "system",
+    "timestamp": "2024-03-08T02:00:00Z",
+    "description": "Backup completed successfully for all pools",
+    "details": {
+      "backup_type": "full",
+      "pools_backed_up": 18,
+      "backup_size": "2.4 GB",
+      "duration": "15 minutes",
+      "alert_type": "backup_success"
+    },
+    "severity": "info"
+  },
+  {
+    "id": "act-023",
+    "type": "system_alert",
+    "user": "system",
+    "timestamp": "2024-03-07T08:00:00Z",
+    "description": "Pool 172.16.32.0/20 approaching 60% utilization (52.66%)",
+    "details": {
+      "pool_id": "pool-008",
+      "utilization": 52.66,
+      "threshold": 60,
+      "allocated": 2156,
+      "total": 4096,
+      "alert_type": "utilization_warning"
+    },
+    "pool_id": "pool-008",
+    "severity": "warning"
+  },
+  {
+    "id": "act-024",
+    "type": "ip_allocation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-03-07T14:45:00Z",
+    "description": "Allocated IP address 10.0.50.10 to wifi-controller-01.corp.local",
+    "details": {
+      "ip_address": "10.0.50.10",
+      "pool_id": "pool-009",
+      "hostname": "wifi-controller-01.corp.local",
+      "device_id": "svr-wifi-001",
+      "device_type": "server",
+      "allocation_id": "alloc-088"
+    },
+    "ip_address": "10.0.50.10",
+    "pool_id": "pool-009",
+    "severity": "info"
+  },
+  {
+    "id": "act-025",
+    "type": "ip_allocation",
+    "user": "iot-admin@ipam.local",
+    "timestamp": "2024-03-06T09:30:00Z",
+    "description": "Allocated IP address 192.168.10.150 to sensor-motion-01.iot.local",
+    "details": {
+      "ip_address": "192.168.10.150",
+      "pool_id": "pool-004",
+      "hostname": "sensor-motion-01.iot.local",
+      "device_id": "iot-sensor-004",
+      "device_type": "iot",
+      "allocation_id": "alloc-089"
+    },
+    "ip_address": "192.168.10.150",
+    "pool_id": "pool-004",
+    "severity": "info"
+  },
+  {
+    "id": "act-026",
+    "type": "system_alert",
+    "user": "system",
+    "timestamp": "2024-03-06T10:00:00Z",
+    "description": "System maintenance scheduled for 2024-03-20 02:00 AM",
+    "details": {
+      "maintenance_date": "2024-03-20T02:00:00Z",
+      "duration": "2 hours",
+      "affected_services": ["IP allocation", "Pool management"],
+      "alert_type": "maintenance_notice"
+    },
+    "severity": "info"
+  },
+  {
+    "id": "act-027",
+    "type": "ip_allocation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-03-05T16:00:00Z",
+    "description": "Allocated IP address 172.16.1.100 to dc-vm-02.datacenter.local",
+    "details": {
+      "ip_address": "172.16.1.100",
+      "pool_id": "pool-006",
+      "hostname": "dc-vm-02.datacenter.local",
+      "device_id": "vm-dc-002",
+      "device_type": "vm",
+      "allocation_id": "alloc-087"
+    },
+    "ip_address": "172.16.1.100",
+    "pool_id": "pool-006",
+    "severity": "info"
+  },
+  {
+    "id": "act-028",
+    "type": "pool_creation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-03-04T11:20:00Z",
+    "description": "Created new pool 192.168.200.0/24 for printers",
+    "details": {
+      "pool_id": "pool-017",
+      "cidr": "192.168.200.0/24",
+      "type": "private",
+      "ip_class": "C",
+      "total_hosts": 256,
+      "description": "Printers and network devices"
+    },
+    "pool_id": "pool-017",
+    "severity": "info"
+  },
+  {
+    "id": "act-029",
+    "type": "user_login",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-03-04T08:30:00Z",
+    "description": "User admin@ipam.local logged in successfully",
+    "details": {
+      "login_method": "password",
+      "ip_address": "10.0.0.50",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "session_id": "sess-20240304-083000"
+    },
+    "severity": "info"
+  },
+  {
+    "id": "act-030",
+    "type": "ip_allocation",
+    "user": "devops@ipam.local",
+    "timestamp": "2024-03-03T14:20:00Z",
+    "description": "Allocated IP address 172.16.32.201 to container-db-01.k8s.local",
+    "details": {
+      "ip_address": "172.16.32.201",
+      "pool_id": "pool-008",
+      "hostname": "container-db-01.k8s.local",
+      "device_id": "container-002",
+      "device_type": "container",
+      "allocation_id": "alloc-063"
+    },
+    "ip_address": "172.16.32.201",
+    "pool_id": "pool-008",
+    "severity": "info"
+  },
+  {
+    "id": "act-031",
+    "type": "ip_allocation",
+    "user": "devops@ipam.local",
+    "timestamp": "2024-03-03T14:05:00Z",
+    "description": "Allocated IP address 172.16.32.200 to container-app-01.k8s.local",
+    "details": {
+      "ip_address": "172.16.32.200",
+      "pool_id": "pool-008",
+      "hostname": "container-app-01.k8s.local",
+      "device_id": "container-001",
+      "device_type": "container",
+      "allocation_id": "alloc-062"
+    },
+    "ip_address": "172.16.32.200",
+    "pool_id": "pool-008",
+    "severity": "info"
+  },
+  {
+    "id": "act-032",
+    "type": "user_login",
+    "user": "devops@ipam.local",
+    "timestamp": "2024-03-03T09:15:00Z",
+    "description": "User devops@ipam.local logged in successfully",
+    "details": {
+      "login_method": "password",
+      "ip_address": "10.0.0.51",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+      "session_id": "sess-20240303-091500"
+    },
+    "severity": "info"
+  },
+  {
+    "id": "act-033",
+    "type": "ip_allocation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-03-02T15:30:00Z",
+    "description": "Allocated IP address 10.0.20.101 to switch-access-02.corp.local",
+    "details": {
+      "ip_address": "10.0.20.101",
+      "pool_id": "pool-009",
+      "hostname": "switch-access-02.corp.local",
+      "device_id": "switch-acc-002",
+      "device_type": "switch",
+      "allocation_id": "alloc-061"
+    },
+    "ip_address": "10.0.20.101",
+    "pool_id": "pool-009",
+    "severity": "info"
+  },
+  {
+    "id": "act-034",
+    "type": "ip_allocation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-03-02T15:15:00Z",
+    "description": "Allocated IP address 10.0.20.100 to switch-access-01.corp.local",
+    "details": {
+      "ip_address": "10.0.20.100",
+      "pool_id": "pool-009",
+      "hostname": "switch-access-01.corp.local",
+      "device_id": "switch-acc-001",
+      "device_type": "switch",
+      "allocation_id": "alloc-060"
+    },
+    "ip_address": "10.0.20.100",
+    "pool_id": "pool-009",
+    "severity": "info"
+  },
+  {
+    "id": "act-035",
+    "type": "ip_release",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-03-01T11:45:00Z",
+    "description": "Released IP address 192.168.2.200 from staging-web-01.dev.local",
+    "details": {
+      "ip_address": "192.168.2.200",
+      "pool_id": "pool-002",
+      "hostname": "staging-web-01.dev.local",
+      "device_id": "svr-staging-001",
+      "reason": "Staging environment cleanup",
+      "allocation_id": "alloc-076"
+    },
+    "ip_address": "192.168.2.200",
+    "pool_id": "pool-002",
+    "severity": "info"
+  },
+  {
+    "id": "act-036",
+    "type": "system_alert",
+    "user": "system",
+    "timestamp": "2024-03-01T08:00:00Z",
+    "description": "Pool 172.16.0.0/20 utilization exceeded 75% threshold",
+    "details": {
+      "pool_id": "pool-006",
+      "utilization": 79.26,
+      "threshold": 75,
+      "allocated": 3245,
+      "total": 4096,
+      "alert_type": "utilization_warning"
+    },
+    "pool_id": "pool-006",
+    "severity": "warning"
+  },
+  {
+    "id": "act-037",
+    "type": "ip_allocation",
+    "user": "rd-admin@ipam.local",
+    "timestamp": "2024-02-29T10:30:00Z",
+    "description": "Allocated IP address 10.10.1.10 to lab-test-01.rd.local",
+    "details": {
+      "ip_address": "10.10.1.10",
+      "pool_id": "pool-018",
+      "hostname": "lab-test-01.rd.local",
+      "device_id": "svr-lab-test-001",
+      "device_type": "server",
+      "expires_at": "2024-12-31T23:59:59Z",
+      "allocation_id": "alloc-077"
+    },
+    "ip_address": "10.10.1.10",
+    "pool_id": "pool-018",
+    "severity": "info"
+  },
+  {
+    "id": "act-038",
+    "type": "ip_allocation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-02-28T13:20:00Z",
+    "description": "Allocated IP address 172.16.0.150 to dc-storage-02.datacenter.local",
+    "details": {
+      "ip_address": "172.16.0.150",
+      "pool_id": "pool-006",
+      "hostname": "dc-storage-02.datacenter.local",
+      "device_id": "svr-storage-002",
+      "device_type": "server",
+      "allocation_id": "alloc-078"
+    },
+    "ip_address": "172.16.0.150",
+    "pool_id": "pool-006",
+    "severity": "info"
+  },
+  {
+    "id": "act-039",
+    "type": "user_login",
+    "user": "security@ipam.local",
+    "timestamp": "2024-02-28T09:00:00Z",
+    "description": "User security@ipam.local logged in successfully",
+    "details": {
+      "login_method": "password",
+      "ip_address": "192.168.100.10",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "session_id": "sess-20240228-090000"
+    },
+    "severity": "info"
+  },
+  {
+    "id": "act-040",
+    "type": "ip_allocation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-02-27T14:15:00Z",
+    "description": "Allocated IP address 10.0.100.50 to nfs-server-01.corp.local",
+    "details": {
+      "ip_address": "10.0.100.50",
+      "pool_id": "pool-009",
+      "hostname": "nfs-server-01.corp.local",
+      "device_id": "svr-nfs-001",
+      "device_type": "server",
+      "allocation_id": "alloc-080"
+    },
+    "ip_address": "10.0.100.50",
+    "pool_id": "pool-009",
+    "severity": "info"
+  },
+  {
+    "id": "act-041",
+    "type": "ip_allocation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-02-26T11:00:00Z",
+    "description": "Allocated IP address 192.168.1.120 to lb-internal-01.prod.local",
+    "details": {
+      "ip_address": "192.168.1.120",
+      "pool_id": "pool-001",
+      "hostname": "lb-internal-01.prod.local",
+      "device_id": "svr-lb-int-001",
+      "device_type": "server",
+      "allocation_id": "alloc-074"
+    },
+    "ip_address": "192.168.1.120",
+    "pool_id": "pool-001",
+    "severity": "info"
+  },
+  {
+    "id": "act-042",
+    "type": "ip_allocation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-02-25T10:45:00Z",
+    "description": "Allocated IP address 10.0.15.10 to proxy-01.corp.local",
+    "details": {
+      "ip_address": "10.0.15.10",
+      "pool_id": "pool-009",
+      "hostname": "proxy-01.corp.local",
+      "device_id": "svr-proxy-001",
+      "device_type": "server",
+      "allocation_id": "alloc-075"
+    },
+    "ip_address": "10.0.15.10",
+    "pool_id": "pool-009",
+    "severity": "info"
+  },
+  {
+    "id": "act-043",
+    "type": "user_login",
+    "user": "iot-admin@ipam.local",
+    "timestamp": "2024-02-25T08:20:00Z",
+    "description": "User iot-admin@ipam.local logged in successfully",
+    "details": {
+      "login_method": "password",
+      "ip_address": "192.168.10.5",
+      "user_agent": "Mozilla/5.0 (Linux; Android 10)",
+      "session_id": "sess-20240225-082000"
+    },
+    "severity": "info"
+  },
+  {
+    "id": "act-044",
+    "type": "ip_allocation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-02-24T16:30:00Z",
+    "description": "Allocated IP address 192.168.1.90 to queue-server-01.prod.local",
+    "details": {
+      "ip_address": "192.168.1.90",
+      "pool_id": "pool-001",
+      "hostname": "queue-server-01.prod.local",
+      "device_id": "svr-queue-001",
+      "device_type": "server",
+      "allocation_id": "alloc-086"
+    },
+    "ip_address": "192.168.1.90",
+    "pool_id": "pool-001",
+    "severity": "info"
+  },
+  {
+    "id": "act-045",
+    "type": "system_alert",
+    "user": "system",
+    "timestamp": "2024-02-24T12:00:00Z",
+    "description": "3 expired allocations detected - Consider cleanup",
+    "details": {
+      "expired_count": 3,
+      "expired_ips": ["192.168.2.150", "10.1.2.50", "172.16.0.250"],
+      "alert_type": "expired_allocations",
+      "oldest_expiry": "2024-01-15T23:59:59Z"
+    },
+    "severity": "info"
+  },
+  {
+    "id": "act-046",
+    "type": "ip_allocation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-02-23T14:00:00Z",
+    "description": "Allocated IP address 10.0.0.51 to ad-dc-02.corp.local",
+    "details": {
+      "ip_address": "10.0.0.51",
+      "pool_id": "pool-009",
+      "hostname": "ad-dc-02.corp.local",
+      "device_id": "svr-ad-002",
+      "device_type": "server",
+      "allocation_id": "alloc-049"
+    },
+    "ip_address": "10.0.0.51",
+    "pool_id": "pool-009",
+    "severity": "info"
+  },
+  {
+    "id": "act-047",
+    "type": "ip_allocation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-02-23T13:45:00Z",
+    "description": "Allocated IP address 10.0.0.50 to ad-dc-01.corp.local",
+    "details": {
+      "ip_address": "10.0.0.50",
+      "pool_id": "pool-009",
+      "hostname": "ad-dc-01.corp.local",
+      "device_id": "svr-ad-001",
+      "device_type": "server",
+      "allocation_id": "alloc-048"
+    },
+    "ip_address": "10.0.0.50",
+    "pool_id": "pool-009",
+    "severity": "info"
+  },
+  {
+    "id": "act-048",
+    "type": "ip_allocation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-02-22T15:20:00Z",
+    "description": "Allocated IP address 172.16.0.200 to dc-monitor-01.datacenter.local",
+    "details": {
+      "ip_address": "172.16.0.200",
+      "pool_id": "pool-006",
+      "hostname": "dc-monitor-01.datacenter.local",
+      "device_id": "svr-dc-mon-001",
+      "device_type": "server",
+      "allocation_id": "alloc-047"
+    },
+    "ip_address": "172.16.0.200",
+    "pool_id": "pool-006",
+    "severity": "info"
+  },
+  {
+    "id": "act-049",
+    "type": "ip_allocation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-02-21T11:30:00Z",
+    "description": "Allocated IP address 192.168.1.201 to log-server-01.prod.local",
+    "details": {
+      "ip_address": "192.168.1.201",
+      "pool_id": "pool-001",
+      "hostname": "log-server-01.prod.local",
+      "device_id": "svr-log-001",
+      "device_type": "server",
+      "allocation_id": "alloc-046"
+    },
+    "ip_address": "192.168.1.201",
+    "pool_id": "pool-001",
+    "severity": "info"
+  },
+  {
+    "id": "act-050",
+    "type": "ip_allocation",
+    "user": "admin@ipam.local",
+    "timestamp": "2024-02-21T11:15:00Z",
+    "description": "Allocated IP address 192.168.1.200 to monitoring-01.prod.local",
+    "details": {
+      "ip_address": "192.168.1.200",
+      "pool_id": "pool-001",
+      "hostname": "monitoring-01.prod.local",
+      "device_id": "svr-mon-001",
+      "device_type": "server",
+      "allocation_id": "alloc-045"
+    },
+    "ip_address": "192.168.1.200",
+    "pool_id": "pool-001",
+    "severity": "info"
+  }
+]
+
