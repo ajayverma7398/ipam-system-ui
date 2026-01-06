@@ -413,8 +413,6 @@ Before production deployment:
 
 ## 📝 License
 
-[Specify your license here]
-
 ## 👤 Ajay Kumar Verma
 
 Built by a Frontend Engineer specializing in React, Next.js, and modern web architecture.
